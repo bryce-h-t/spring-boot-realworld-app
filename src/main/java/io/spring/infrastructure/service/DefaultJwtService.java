@@ -27,18 +27,23 @@ public class DefaultJwtService implements JwtService {
 
     @Override
     public String toToken(User user) {
+        byte[] keyBytes = secret.getBytes();
         return Jwts.builder()
             .setSubject(user.getId())
             .setExpiration(expireTimeFromNow())
-            .signWith(SignatureAlgorithm.HS512, secret)
+            .signWith(Jwts.SIG.HS512.key().hmacShaKeyFor(keyBytes))
             .compact();
     }
 
     @Override
     public Optional<String> getSubFromToken(String token) {
         try {
-            Jws<Claims> claimsJws = Jwts.parser().setSigningKey(secret).parseClaimsJws(token);
-            return Optional.ofNullable(claimsJws.getBody().getSubject());
+            byte[] keyBytes = secret.getBytes();
+            var jwt = Jwts.parser()
+                .verifyWith(Jwts.SIG.HS512.key().hmacShaKeyFor(keyBytes))
+                .build()
+                .parseSignedClaims(token);
+            return Optional.ofNullable(jwt.getPayload().getSubject());
         } catch (Exception e) {
             return Optional.empty();
         }
