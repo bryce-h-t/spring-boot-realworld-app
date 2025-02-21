@@ -17,12 +17,12 @@ public class DefaultJwtServiceTest {
     private JwtService jwtService;
 
     @BeforeEach
-    public void setUp() {
+    void setUp() {
         jwtService = new DefaultJwtService("123123", 3600);
     }
 
     @Test
-    public void should_generate_and_parse_token() {
+    void should_generate_and_parse_token() {
         User user = new User("email@email.com", "username", "123", "", "");
         String token = jwtService.toToken(user);
         assertNotNull(token);
@@ -32,13 +32,13 @@ public class DefaultJwtServiceTest {
     }
 
     @Test
-    public void should_get_null_with_wrong_jwt() {
+    void should_get_null_with_wrong_jwt() {
         Optional<String> optional = jwtService.getSubFromToken("123");
         assertFalse(optional.isPresent());
     }
 
     @Test
-    public void should_get_null_with_expired_jwt() {
+    void should_get_null_with_expired_jwt() {
         String token = "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhaXNlbnNpeSIsImV4cCI6MTUwMjE2MTIwNH0.SJB-U60WzxLYNomqLo4G3v3LzFxJKuVrIud8D8Lz3-mgpo9pN1i7C8ikU_jQPJGm8HsC1CquGMI-rSuM7j6LDA";
         assertFalse(jwtService.getSubFromToken(token).isPresent());
     }

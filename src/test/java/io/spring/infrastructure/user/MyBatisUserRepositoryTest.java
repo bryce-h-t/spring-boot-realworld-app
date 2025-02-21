@@ -21,18 +21,18 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 @ExtendWith(SpringExtension.class)
 @MybatisTest
 @Import(MyBatisUserRepository.class)
-public class MyBatisUserRepositoryTest {
+class MyBatisUserRepositoryTest {
     @Autowired
     private UserRepository userRepository;
     private User user;
 
     @BeforeEach
-    public void setUp() {
+    void setUp() {
         user = new User("aisensiy@163.com", "aisensiy", "123", "", "default");
     }
 
     @Test
-    public void should_save_and_fetch_user_success() {
+    void should_save_and_fetch_user_success() {
         userRepository.save(user);
         Optional<User> userOptional = userRepository.findByUsername("aisensiy");
         assertEquals(userOptional.get(), user);
@@ -41,7 +41,7 @@ public class MyBatisUserRepositoryTest {
     }
 
     @Test
-    public void should_update_user_success() {
+    void should_update_user_success() {
         String newEmail = "newemail@email.com";
         user.update(newEmail, "", "", "", "");
         userRepository.save(user);
@@ -59,7 +59,7 @@ public class MyBatisUserRepositoryTest {
     }
 
     @Test
-    public void should_create_new_user_follow_success() {
+    void should_create_new_user_follow_success() {
         User other = new User("other@example.com", "other", "123", "", "");
         userRepository.save(other);
 
@@ -69,7 +69,7 @@ public class MyBatisUserRepositoryTest {
     }
 
     @Test
-    public void should_unfollow_user_success() {
+    void should_unfollow_user_success() {
         User other = new User("other@example.com", "other", "123", "", "");
         userRepository.save(other);
 

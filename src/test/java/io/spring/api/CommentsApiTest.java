@@ -33,7 +33,7 @@ import static org.mockito.Mockito.when;
 
 @WebMvcTest(CommentsApi.class)
 @Import({WebSecurityConfig.class, JacksonCustomizations.class})
-public class CommentsApiTest extends TestWithCurrentUser {
+class CommentsApiTest extends TestWithCurrentUser {
 
     @MockBean
     private ArticleRepository articleRepository;

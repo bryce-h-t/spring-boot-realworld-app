@@ -33,7 +33,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
     MyBatisUserRepository.class,
     MyBatisArticleRepository.class,
     MyBatisArticleFavoriteRepository.class})
-public class ArticleQueryServiceTest {
+class ArticleQueryServiceTest {
     @Autowired
     private ArticleQueryService queryService;
 
@@ -50,7 +50,7 @@ public class ArticleQueryServiceTest {
     private Article article;
 
     @BeforeEach
-    public void setUp() {
+    void setUp() {
         user = new User("aisensiy@gmail.com", "aisensiy", "123", "", "");
         userRepository.save(user);
         article = new Article("test", "desc", "body", new String[]{"java", "spring"}, user.getId(), new DateTime());
@@ -58,7 +58,7 @@ public class ArticleQueryServiceTest {
     }
 
     @Test
-    public void should_fetch_article_success() {
+    void should_fetch_article_success() {
         Optional<ArticleData> optional = queryService.findById(article.getId(), user);
         assertTrue(optional.isPresent());
 
@@ -71,7 +71,7 @@ public class ArticleQueryServiceTest {
     }
 
     @Test
-    public void should_get_article_with_right_favorite_and_favorite_count() {
+    void should_get_article_with_right_favorite_and_favorite_count() {
         User anotherUser = new User("other@test.com", "other", "123", "", "");
         userRepository.save(anotherUser);
         articleFavoriteRepository.save(new ArticleFavorite(article.getId(), anotherUser.getId()));
@@ -85,7 +85,7 @@ public class ArticleQueryServiceTest {
     }
 
     @Test
-    public void should_get_default_article_list() {
+    void should_get_default_article_list() {
         Article anotherArticle = new Article("new article", "desc", "body", new String[]{"test"}, user.getId(), new DateTime().minusHours(1));
         articleRepository.save(anotherArticle);
 
@@ -100,7 +100,7 @@ public class ArticleQueryServiceTest {
     }
 
     @Test
-    public void should_query_article_by_author() {
+    void should_query_article_by_author() {
         User anotherUser = new User("other@email.com", "other", "123", "", "");
         userRepository.save(anotherUser);
 
@@ -113,7 +113,7 @@ public class ArticleQueryServiceTest {
     }
 
     @Test
-    public void should_query_article_by_favorite() {
+    void should_query_article_by_favorite() {
         User anotherUser = new User("other@email.com", "other", "123", "", "");
         userRepository.save(anotherUser);
 
@@ -133,7 +133,7 @@ public class ArticleQueryServiceTest {
     }
 
     @Test
-    public void should_query_article_by_tag() {
+    void should_query_article_by_tag() {
         Article anotherArticle = new Article("new article", "desc", "body", new String[]{"test"}, user.getId());
         articleRepository.save(anotherArticle);
 
@@ -147,7 +147,7 @@ public class ArticleQueryServiceTest {
     }
 
     @Test
-    public void should_show_following_if_user_followed_author() {
+    void should_show_following_if_user_followed_author() {
         User anotherUser = new User("other@email.com", "other", "123", "", "");
         userRepository.save(anotherUser);
 
@@ -161,7 +161,7 @@ public class ArticleQueryServiceTest {
     }
 
     @Test
-    public void should_get_user_feed() {
+    void should_get_user_feed() {
         User anotherUser = new User("other@email.com", "other", "123", "", "");
         userRepository.save(anotherUser);
 

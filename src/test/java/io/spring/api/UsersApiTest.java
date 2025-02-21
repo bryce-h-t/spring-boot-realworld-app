@@ -55,7 +55,7 @@ public class UsersApiTest {
   }
 
   @Test
-  public void should_create_user_success() throws Exception {
+  void should_create_user_success() throws Exception {
     String email = "john@jacob.com";
     String username = "johnjacob";
 
@@ -86,7 +86,7 @@ public class UsersApiTest {
   }
 
   @Test
-  public void should_show_error_message_for_blank_username() throws Exception {
+  void should_show_error_message_for_blank_username() throws Exception {
 
     String email = "john@jacob.com";
     String username = "";
@@ -105,7 +105,7 @@ public class UsersApiTest {
   }
 
   @Test
-  public void should_show_error_message_for_invalid_email() throws Exception {
+  void should_show_error_message_for_invalid_email() throws Exception {
     String email = "johnxjacob.com";
     String username = "johnjacob";
 
@@ -123,7 +123,7 @@ public class UsersApiTest {
   }
 
   @Test
-  public void should_show_error_for_duplicated_username() throws Exception {
+  void should_show_error_for_duplicated_username() throws Exception {
     String email = "john@jacob.com";
     String username = "johnjacob";
 
@@ -145,7 +145,7 @@ public class UsersApiTest {
   }
 
   @Test
-  public void should_show_error_for_duplicated_email() throws Exception {
+  void should_show_error_for_duplicated_email() throws Exception {
     String email = "john@jacob.com";
     String username = "johnjacob2";
 
@@ -184,7 +184,7 @@ public class UsersApiTest {
   }
 
   @Test
-  public void should_login_success() throws Exception {
+  void should_login_success() throws Exception {
     String email = "john@jacob.com";
     String username = "johnjacob2";
     String password = "123";
@@ -227,7 +227,7 @@ public class UsersApiTest {
   }
 
   @Test
-  public void should_fail_login_with_wrong_password() throws Exception {
+  void should_fail_login_with_wrong_password() throws Exception {
     String email = "john@jacob.com";
     String username = "johnjacob2";
     String password = "123";

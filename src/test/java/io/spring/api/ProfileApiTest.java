@@ -25,7 +25,7 @@ import static org.mockito.Mockito.when;
 
 @WebMvcTest(ProfileApi.class)
 @Import({WebSecurityConfig.class, JacksonCustomizations.class})
-public class ProfileApiTest extends TestWithCurrentUser {
+class ProfileApiTest extends TestWithCurrentUser {
     private User anotherUser;
 
     @Autowired

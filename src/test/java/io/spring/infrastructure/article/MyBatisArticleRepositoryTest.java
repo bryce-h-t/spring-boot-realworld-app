@@ -25,7 +25,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 @MybatisTest
 @ExtendWith(SpringExtension.class)
 @Import({MyBatisArticleRepository.class, MyBatisUserRepository.class})
-public class MyBatisArticleRepositoryTest {
+class MyBatisArticleRepositoryTest {
     @Autowired
     private ArticleRepository articleRepository;
 
@@ -36,14 +36,14 @@ public class MyBatisArticleRepositoryTest {
 
 
     @BeforeEach
-    public void setUp() {
+    void setUp() {
         User user = new User("aisensiy@gmail.com", "aisensiy", "123", "bio", "default");
         userRepository.save(user);
         article = new Article("test", "desc", "body", new String[]{"java", "spring"}, user.getId());
     }
 
     @Test
-    public void should_create_and_fetch_article_success() {
+    void should_create_and_fetch_article_success() {
         articleRepository.save(article);
         Optional<Article> optional = articleRepository.findById(article.getId());
         assertTrue(optional.isPresent());
@@ -53,7 +53,7 @@ public class MyBatisArticleRepositoryTest {
     }
 
     @Test
-    public void should_update_and_fetch_article_success() {
+    void should_update_and_fetch_article_success() {
         articleRepository.save(article);
 
         String newTitle = "new test 2";
@@ -68,7 +68,7 @@ public class MyBatisArticleRepositoryTest {
     }
 
     @Test
-    public void should_delete_article() {
+    void should_delete_article() {
         articleRepository.save(article);
 
         articleRepository.remove(article);

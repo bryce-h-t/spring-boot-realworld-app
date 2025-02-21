@@ -44,7 +44,7 @@ public class CurrentUserApiTest extends TestWithCurrentUser {
   }
 
   @Test
-  public void should_get_current_user_with_token() throws Exception {
+  void should_get_current_user_with_token() throws Exception {
     when(userQueryService.findById(any())).thenReturn(Optional.of(userData));
 
     given()
@@ -62,12 +62,12 @@ public class CurrentUserApiTest extends TestWithCurrentUser {
   }
 
   @Test
-  public void should_get_401_without_token() throws Exception {
+  void should_get_401_without_token() throws Exception {
     given().contentType("application/json").when().get("/user").then().statusCode(401);
   }
 
   @Test
-  public void should_get_401_with_invalid_token() throws Exception {
+  void should_get_401_with_invalid_token() throws Exception {
     String invalidToken = "asdfasd";
     when(jwtService.getSubFromToken(eq(invalidToken))).thenReturn(Optional.empty());
     given()
@@ -80,7 +80,7 @@ public class CurrentUserApiTest extends TestWithCurrentUser {
   }
 
   @Test
-  public void should_update_current_user_profile() throws Exception {
+  void should_update_current_user_profile() throws Exception {
     String newEmail = "newemail@example.com";
     String newBio = "updated";
     String newUsername = "newusernamee";
@@ -116,7 +116,7 @@ public class CurrentUserApiTest extends TestWithCurrentUser {
   }
 
   @Test
-  public void should_get_error_if_email_exists_when_update_user_profile() throws Exception {
+  void should_get_error_if_email_exists_when_update_user_profile() throws Exception {
     String newEmail = "newemail@example.com";
     String newBio = "updated";
     String newUsername = "newusernamee";
@@ -159,7 +159,7 @@ public class CurrentUserApiTest extends TestWithCurrentUser {
   }
 
   @Test
-  public void should_get_401_if_not_login() throws Exception {
+  void should_get_401_if_not_login() throws Exception {
     given()
         .contentType("application/json")
         .body(

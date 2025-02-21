@@ -47,13 +47,13 @@ class ArticleApiTest extends TestWithCurrentUser {
 
     @Override
     @BeforeEach
-    public void setUp() throws Exception {
+    void setUp() throws Exception {
         super.setUp();
         RestAssuredMockMvc.mockMvc(mvc);
     }
 
     @Test
-    public void should_read_article_success() throws Exception {
+    void should_read_article_success() throws Exception {
         String slug = "test-new-article";
         DateTime time = new DateTime();
         Article article = new Article("Test New Article", "Desc", "Body", new String[]{"java", "spring", "jpg"}, user.getId(), time);
@@ -72,7 +72,7 @@ class ArticleApiTest extends TestWithCurrentUser {
     }
 
     @Test
-    public void should_404_if_article_not_found() throws Exception {
+    void should_404_if_article_not_found() throws Exception {
         when(articleQueryService.findBySlug(anyString(), any())).thenReturn(Optional.empty());
         RestAssuredMockMvc.when()
             .get("/articles/not-exists")
@@ -81,7 +81,7 @@ class ArticleApiTest extends TestWithCurrentUser {
     }
 
     @Test
-    public void should_update_article_content_success() throws Exception {
+    void should_update_article_content_success() throws Exception {
         String title = "new-title";
         String body = "new body";
         String description = "new description";
@@ -106,7 +106,7 @@ class ArticleApiTest extends TestWithCurrentUser {
     }
 
     @Test
-    public void should_get_403_if_not_author_to_update_article() throws Exception {
+    void should_get_403_if_not_author_to_update_article() throws Exception {
         String title = "new-title";
         String body = "new body";
         String description = "new description";
@@ -144,7 +144,7 @@ class ArticleApiTest extends TestWithCurrentUser {
     }
 
     @Test
-    public void should_delete_article_success() throws Exception {
+    void should_delete_article_success() throws Exception {
         String title = "title";
         String body = "body";
         String description = "description";
@@ -163,7 +163,7 @@ class ArticleApiTest extends TestWithCurrentUser {
     }
 
     @Test
-    public void should_403_if_not_author_delete_article() throws Exception {
+    void should_403_if_not_author_delete_article() throws Exception {
         String title = "new-title";
         String body = "new body";
         String description = "new description";

@@ -23,7 +23,7 @@ public class MyBatisCommentRepositoryTest {
     private CommentRepository commentRepository;
 
     @Test
-    public void should_create_and_fetch_comment_success() {
+    void should_create_and_fetch_comment_success() {
         Comment comment = new Comment("content", "123", "456");
         commentRepository.save(comment);
 
