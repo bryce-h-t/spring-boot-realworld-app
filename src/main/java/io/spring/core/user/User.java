@@ -4,6 +4,8 @@ import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
+import java.util.Objects;
+
 import java.util.UUID;
 
 @Getter
@@ -27,23 +29,23 @@ public class User {
     }
 
     public void update(String email, String username, String password, String bio, String image) {
-        if (!"".equals(email)) {
+        if (!Objects.equals("", email)) {
             this.email = email;
         }
 
-        if (!"".equals(username)) {
+        if (!Objects.equals("", username)) {
             this.username = username;
         }
 
-        if (!"".equals(password)) {
+        if (!Objects.equals("", password)) {
             this.password = password;
         }
 
-        if (!"".equals(bio)) {
+        if (!Objects.equals("", bio)) {
             this.bio = bio;
         }
 
-        if (!"".equals(image)) {
+        if (!Objects.equals("", image)) {
             this.image = image;
         }
     }
