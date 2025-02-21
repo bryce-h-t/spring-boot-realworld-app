@@ -11,10 +11,10 @@ public class UserWithToken {
     private String token;
 
     public UserWithToken(UserData userData, String token) {
-        this.email = userData.getEmail();
-        this.username = userData.getUsername();
-        this.bio = userData.getBio();
-        this.image = userData.getImage();
+        this.email = userData.email();
+        this.username = userData.username();
+        this.bio = userData.bio();
+        this.image = userData.image();
         this.token = token;
     }
 
