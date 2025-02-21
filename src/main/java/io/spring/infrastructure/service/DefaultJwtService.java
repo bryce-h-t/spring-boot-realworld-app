@@ -4,24 +4,27 @@ import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jws;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
+import io.jsonwebtoken.security.Keys;
 import io.spring.core.service.JwtService;
 import io.spring.core.user.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
+import javax.crypto.SecretKey;
 import java.util.Date;
 import java.util.Optional;
 
 @Component
 public class DefaultJwtService implements JwtService {
-    private String secret;
-    private int sessionTime;
+    private final SecretKey key;
+    private final int sessionTime;
 
     @Autowired
     public DefaultJwtService(@Value("${jwt.secret}") String secret,
                              @Value("${jwt.sessionTime}") int sessionTime) {
-        this.secret = secret;
+        // Generate a secure key for HS512
+        this.key = Keys.secretKeyFor(SignatureAlgorithm.HS512);
         this.sessionTime = sessionTime;
     }
 
@@ -30,14 +33,17 @@ public class DefaultJwtService implements JwtService {
         return Jwts.builder()
             .setSubject(user.getId())
             .setExpiration(expireTimeFromNow())
-            .signWith(SignatureAlgorithm.HS512, secret)
+            .signWith(key)
             .compact();
     }
 
     @Override
     public Optional<String> getSubFromToken(String token) {
         try {
-            Jws<Claims> claimsJws = Jwts.parser().setSigningKey(secret).parseClaimsJws(token);
+            Jws<Claims> claimsJws = Jwts.parserBuilder()
+                .setSigningKey(key)
+                .build()
+                .parseClaimsJws(token);
             return Optional.ofNullable(claimsJws.getBody().getSubject());
         } catch (Exception e) {
             return Optional.empty();
