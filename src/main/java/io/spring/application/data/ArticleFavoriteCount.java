@@ -1,8 +1,12 @@
 package io.spring.application.data;
 
-import lombok.Value;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
-@Value
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class ArticleFavoriteCount {
     private String id;
     private Integer count;

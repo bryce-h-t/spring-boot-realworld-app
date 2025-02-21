@@ -7,8 +7,8 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.stream.Collectors;
-import javax.validation.ConstraintViolation;
-import javax.validation.ConstraintViolationException;
+import jakarta.validation.ConstraintViolation;
+import jakarta.validation.ConstraintViolationException;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -22,14 +22,14 @@ import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
 @RestControllerAdvice
-public class CustomizeExceptionHandler extends ResponseEntityExceptionHandler {
+public class CustomizeExceptionHandler {
 
   @ExceptionHandler({InvalidRequestException.class})
-  public ResponseEntity<Object> handleInvalidRequest(RuntimeException e, WebRequest request) {
-    InvalidRequestException ire = (InvalidRequestException) e;
-
+  @ResponseStatus(UNPROCESSABLE_ENTITY)
+  @ResponseBody
+  public ResponseEntity<Object> handleInvalidRequest(InvalidRequestException e) {
     List<FieldErrorResource> errorResources =
-        ire.getErrors().getFieldErrors().stream()
+        e.getErrors().getFieldErrors().stream()
             .map(
                 fieldError ->
                     new FieldErrorResource(
@@ -39,12 +39,7 @@ public class CustomizeExceptionHandler extends ResponseEntityExceptionHandler {
                         fieldError.getDefaultMessage()))
             .collect(Collectors.toList());
 
-    ErrorResource error = new ErrorResource(errorResources);
-
-    HttpHeaders headers = new HttpHeaders();
-    headers.setContentType(MediaType.APPLICATION_JSON);
-
-    return handleExceptionInternal(e, error, headers, UNPROCESSABLE_ENTITY, request);
+    return new ResponseEntity<>(new ErrorResource(errorResources), UNPROCESSABLE_ENTITY);
   }
 
   @ExceptionHandler(InvalidAuthenticationException.class)
@@ -59,14 +54,13 @@ public class CustomizeExceptionHandler extends ResponseEntityExceptionHandler {
             });
   }
 
-  @Override
-  protected ResponseEntity<Object> handleMethodArgumentNotValid(
-      MethodArgumentNotValidException e,
-      HttpHeaders headers,
-      HttpStatus status,
-      WebRequest request) {
+  @ExceptionHandler(MethodArgumentNotValidException.class)
+  @ResponseStatus(UNPROCESSABLE_ENTITY)
+  @ResponseBody
+  public ResponseEntity<Object> handleMethodArgumentNotValid(
+      MethodArgumentNotValidException ex) {
     List<FieldErrorResource> errorResources =
-        e.getBindingResult().getFieldErrors().stream()
+        ex.getBindingResult().getFieldErrors().stream()
             .map(
                 fieldError ->
                     new FieldErrorResource(
@@ -76,7 +70,7 @@ public class CustomizeExceptionHandler extends ResponseEntityExceptionHandler {
                         fieldError.getDefaultMessage()))
             .collect(Collectors.toList());
 
-    return ResponseEntity.status(UNPROCESSABLE_ENTITY).body(new ErrorResource(errorResources));
+    return new ResponseEntity<>(new ErrorResource(errorResources), UNPROCESSABLE_ENTITY);
   }
 
   @ExceptionHandler({ConstraintViolationException.class})
