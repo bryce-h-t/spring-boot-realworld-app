@@ -50,12 +50,3 @@ dependencies {
 test {
     useJUnitPlatform()
 }
-
-drill {
-    agentId = "backend2"
-    groupId = "test"
-    buildVersion = "0.1.7"
-    adminHost = "localhost"
-    adminPort = 9090
-    logLevel = com.epam.drill.agent.runner.LogLevels.INFO
-}
