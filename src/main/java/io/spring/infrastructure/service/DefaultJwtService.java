@@ -31,7 +31,7 @@ public class DefaultJwtService implements JwtService {
         return Jwts.builder()
             .setSubject(user.getId())
             .setExpiration(expireTimeFromNow())
-            .signWith(Jwts.SIG.HS512.key().hmacShaKeyFor(keyBytes))
+            .signWith(SignatureAlgorithm.HS512, keyBytes)
             .compact();
     }
 
@@ -39,11 +39,11 @@ public class DefaultJwtService implements JwtService {
     public Optional<String> getSubFromToken(String token) {
         try {
             byte[] keyBytes = secret.getBytes();
-            var jwt = Jwts.parser()
-                .verifyWith(Jwts.SIG.HS512.key().hmacShaKeyFor(keyBytes))
+            var jwt = Jwts.parserBuilder()
+                .setSigningKey(keyBytes)
                 .build()
-                .parseSignedClaims(token);
-            return Optional.ofNullable(jwt.getPayload().getSubject());
+                .parseClaimsJws(token);
+            return Optional.ofNullable(jwt.getBody().getSubject());
         } catch (Exception e) {
             return Optional.empty();
         }
