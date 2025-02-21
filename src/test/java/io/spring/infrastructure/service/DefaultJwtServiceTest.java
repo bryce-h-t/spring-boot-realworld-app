@@ -4,6 +4,11 @@ import io.spring.core.service.JwtService;
 import io.spring.core.user.User;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.TestPropertySource;
+import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.Optional;
 
@@ -12,13 +17,23 @@ import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
+@RunWith(SpringRunner.class)
+@SpringBootTest
+@TestPropertySource(locations = "classpath:application-test.properties")
+
 public class DefaultJwtServiceTest {
 
     private JwtService jwtService;
 
+    @Value("${jwt.secret}")
+    private String secret;
+
+    @Value("${jwt.sessionTime}")
+    private int sessionTime;
+
     @Before
     public void setUp() {
-        jwtService = new DefaultJwtService("123123", 3600);
+        jwtService = new DefaultJwtService(secret, sessionTime);
     }
 
     @Test
