@@ -14,7 +14,7 @@ import static org.junit.jupiter.api.Assertions.assertNull;
 
 @SpringBootTest
 @AutoConfigureTestDatabase
-public class ArticleRepositoryTransactionTest {
+class ArticleRepositoryTransactionTest {
     @Autowired
     private ArticleRepository articleRepository;
 

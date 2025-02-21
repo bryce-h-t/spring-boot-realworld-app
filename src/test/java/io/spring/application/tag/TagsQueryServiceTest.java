@@ -16,7 +16,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 @ExtendWith(SpringExtension.class)
 @MybatisTest
 @Import({TagsQueryService.class, MyBatisArticleRepository.class})
-public class TagsQueryServiceTest {
+class TagsQueryServiceTest {
     @Autowired
     private TagsQueryService tagsQueryService;
 

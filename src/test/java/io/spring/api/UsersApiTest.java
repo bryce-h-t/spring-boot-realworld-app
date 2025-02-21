@@ -38,7 +38,7 @@ import org.springframework.test.web.servlet.MockMvc;
   NaiveEncryptService.class,
   JacksonCustomizations.class
 })
-public class UsersApiTest {
+class UsersApiTest {
   @Autowired private MockMvc mvc;
 
   @MockBean private UserRepository userRepository;

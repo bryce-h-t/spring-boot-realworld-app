@@ -18,7 +18,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 @MybatisTest
 @ExtendWith(SpringExtension.class)
 @Import({MyBatisCommentRepository.class})
-public class MyBatisCommentRepositoryTest {
+class MyBatisCommentRepositoryTest {
     @Autowired
     private CommentRepository commentRepository;
 

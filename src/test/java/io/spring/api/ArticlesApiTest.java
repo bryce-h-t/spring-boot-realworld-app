@@ -30,7 +30,7 @@ import org.springframework.test.web.servlet.MockMvc;
 
 @WebMvcTest({ArticlesApi.class})
 @Import({WebSecurityConfig.class, JacksonCustomizations.class})
-public class ArticlesApiTest extends TestWithCurrentUser {
+class ArticlesApiTest extends TestWithCurrentUser {
   @Autowired private MockMvc mvc;
 
   @MockBean private ArticleRepository articleRepository;

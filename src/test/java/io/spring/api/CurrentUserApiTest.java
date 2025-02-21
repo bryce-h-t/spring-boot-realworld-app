@@ -30,7 +30,7 @@ import org.springframework.test.web.servlet.MockMvc;
   UserService.class,
   ValidationAutoConfiguration.class
 })
-public class CurrentUserApiTest extends TestWithCurrentUser {
+class CurrentUserApiTest extends TestWithCurrentUser {
 
   @Autowired private MockMvc mvc;
 
@@ -38,7 +38,7 @@ public class CurrentUserApiTest extends TestWithCurrentUser {
 
   @Override
   @BeforeEach
-  public void setUp() throws Exception {
+  void setUp() throws Exception {
     super.setUp();
     RestAssuredMockMvc.mockMvc(mvc);
   }
