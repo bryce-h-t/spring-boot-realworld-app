@@ -59,10 +59,11 @@ public class CustomizeExceptionHandler extends ResponseEntityExceptionHandler {
             });
   }
 
+  @Override
   protected ResponseEntity<Object> handleMethodArgumentNotValid(
       MethodArgumentNotValidException e,
       HttpHeaders headers,
-      HttpStatus status,
+      org.springframework.http.HttpStatusCode status,
       WebRequest request) {
     List<FieldErrorResource> errorResources =
         e.getBindingResult().getFieldErrors().stream()
