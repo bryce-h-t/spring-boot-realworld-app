@@ -18,7 +18,8 @@ public class DefaultJwtServiceTest {
 
     @BeforeEach
     public void setUp() {
-        jwtService = new DefaultJwtService("123123", 3600);
+        String secret = "UDVOVnJXazlWVVJIWXBManpUelFIOUxrRXVvS3Z2aGs2SEp4VUZSeW9HUFpxZ3dqSzNZUWQ3YlpqN0VxVEs0Sw==";
+        jwtService = new DefaultJwtService(secret, 1); // 1 second expiration for tests
     }
 
     @Test
@@ -39,7 +40,14 @@ public class DefaultJwtServiceTest {
 
     @Test
     public void should_get_null_with_expired_jwt() {
-        String token = "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhaXNlbnNpeSIsImV4cCI6MTUwMjE2MTIwNH0.SJB-U60WzxLYNomqLo4G3v3LzFxJKuVrIud8D8Lz3-mgpo9pN1i7C8ikU_jQPJGm8HsC1CquGMI-rSuM7j6LDA";
+        User user = new User("email@email.com", "username", "123", "", "");
+        String token = jwtService.toToken(user);
+        // Wait for token to expire
+        try {
+            Thread.sleep(1100); // Wait just over 1 second
+        } catch (InterruptedException e) {
+            // ignore
+        }
         assertFalse(jwtService.getSubFromToken(token).isPresent());
     }
 }
