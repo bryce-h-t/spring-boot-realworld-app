@@ -23,7 +23,7 @@ import java.util.Optional;
 import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.Mockito.when;
 
-@WebMvcTest
+@WebMvcTest(controllers = {})
 @TestPropertySource(locations = "classpath:application-test.properties")
 @Import({
   WebSecurityConfig.class,
