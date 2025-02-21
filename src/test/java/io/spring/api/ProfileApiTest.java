@@ -7,8 +7,8 @@ import io.spring.application.ProfileQueryService;
 import io.spring.application.data.ProfileData;
 import io.spring.core.user.FollowRelation;
 import io.spring.core.user.User;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
@@ -36,8 +36,8 @@ public class ProfileApiTest extends TestWithCurrentUser {
 
     private ProfileData profileData;
 
-    @Before
-    public void setUp() throws Exception {
+    @BeforeEach
+    void setUp() throws Exception {
         super.setUp();
         RestAssuredMockMvc.mockMvc(mvc);
         anotherUser = new User("username@test.com", "username", "123", "", "");
@@ -46,7 +46,7 @@ public class ProfileApiTest extends TestWithCurrentUser {
     }
 
     @Test
-    public void should_get_user_profile_success() throws Exception {
+    void should_get_user_profile_success() throws Exception {
         when(profileQueryService.findByUsername(eq(profileData.getUsername()), eq(null)))
             .thenReturn(Optional.of(profileData));
         RestAssuredMockMvc.when()
@@ -58,7 +58,7 @@ public class ProfileApiTest extends TestWithCurrentUser {
     }
 
     @Test
-    public void should_follow_user_success() throws Exception {
+    void should_follow_user_success() throws Exception {
         when(profileQueryService.findByUsername(eq(profileData.getUsername()), eq(user))).thenReturn(Optional.of(profileData));
         given()
             .header("Authorization", "Token " + token)
@@ -71,7 +71,7 @@ public class ProfileApiTest extends TestWithCurrentUser {
     }
 
     @Test
-    public void should_unfollow_user_success() throws Exception {
+    void should_unfollow_user_success() throws Exception {
         FollowRelation followRelation = new FollowRelation(user.getId(), anotherUser.getId());
         when(userRepository.findRelation(eq(user.getId()), eq(anotherUser.getId()))).thenReturn(Optional.of(followRelation));
         when(profileQueryService.findByUsername(eq(profileData.getUsername()), eq(user))).thenReturn(Optional.of(profileData));

@@ -12,8 +12,8 @@ import io.spring.core.article.ArticleRepository;
 import io.spring.core.user.User;
 import org.joda.time.DateTime;
 import org.joda.time.format.ISODateTimeFormat;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
@@ -35,7 +35,7 @@ import static org.mockito.Mockito.when;
 
 @WebMvcTest({ArticleApi.class})
 @Import({WebSecurityConfig.class, JacksonCustomizations.class})
-public class ArticleApiTest extends TestWithCurrentUser {
+class ArticleApiTest extends TestWithCurrentUser {
     @Autowired
     private MockMvc mvc;
 
@@ -46,7 +46,7 @@ public class ArticleApiTest extends TestWithCurrentUser {
     private ArticleRepository articleRepository;
 
     @Override
-    @Before
+    @BeforeEach
     public void setUp() throws Exception {
         super.setUp();
         RestAssuredMockMvc.mockMvc(mvc);

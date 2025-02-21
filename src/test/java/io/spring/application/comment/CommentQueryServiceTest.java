@@ -12,24 +12,23 @@ import io.spring.core.user.UserRepository;
 import io.spring.infrastructure.repository.MyBatisArticleRepository;
 import io.spring.infrastructure.repository.MyBatisCommentRepository;
 import io.spring.infrastructure.repository.MyBatisUserRepository;
-import org.junit.Before;
-import org.junit.Test;
-import org.junit.runner.RunWith;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 import org.mybatis.spring.boot.test.autoconfigure.MybatisTest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Import;
-import org.springframework.test.context.junit4.SpringRunner;
+import org.springframework.test.context.junit.jupiter.SpringJUnitConfig;
 
 import java.util.List;
 import java.util.Optional;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 @MybatisTest
-@RunWith(SpringRunner.class)
+@SpringJUnitConfig
 @Import({MyBatisCommentRepository.class, MyBatisUserRepository.class, CommentQueryService.class, MyBatisArticleRepository.class})
-public class CommentQueryServiceTest {
+class CommentQueryServiceTest {
     @Autowired
     private CommentRepository commentRepository;
 
@@ -44,14 +43,14 @@ public class CommentQueryServiceTest {
 
     private User user;
 
-    @Before
-    public void setUp() {
+    @BeforeEach
+    void setUp() {
         user = new User("aisensiy@test.com", "aisensiy", "123", "", "");
         userRepository.save(user);
     }
 
     @Test
-    public void should_read_comment_success() {
+    void should_read_comment_success() {
         Comment comment = new Comment("content", user.getId(), "123");
         commentRepository.save(comment);
 
@@ -62,7 +61,7 @@ public class CommentQueryServiceTest {
     }
 
     @Test
-    public void should_read_comments_of_article() {
+    void should_read_comments_of_article() {
         Article article = new Article("title", "desc", "body", new String[]{"java"}, user.getId());
         articleRepository.save(article);
 

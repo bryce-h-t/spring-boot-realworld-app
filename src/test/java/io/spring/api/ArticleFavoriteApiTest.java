@@ -12,8 +12,8 @@ import io.spring.core.article.Tag;
 import io.spring.core.favorite.ArticleFavorite;
 import io.spring.core.favorite.ArticleFavoriteRepository;
 import io.spring.core.user.User;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
@@ -47,8 +47,8 @@ public class ArticleFavoriteApiTest extends TestWithCurrentUser {
 
     private Article article;
 
-    @Before
-    public void setUp() throws Exception {
+    @BeforeEach
+    void setUp() throws Exception {
         super.setUp();
         RestAssuredMockMvc.mockMvc(mvc);
         User anotherUser = new User("other@test.com", "other", "123", "", "");
@@ -76,7 +76,7 @@ public class ArticleFavoriteApiTest extends TestWithCurrentUser {
     }
 
     @Test
-    public void should_favorite_an_article_success() throws Exception {
+    void should_favorite_an_article_success() throws Exception {
         given()
             .header("Authorization", "Token " + token)
             .when()
@@ -90,7 +90,7 @@ public class ArticleFavoriteApiTest extends TestWithCurrentUser {
     }
 
     @Test
-    public void should_unfavorite_an_article_success() throws Exception {
+    void should_unfavorite_an_article_success() throws Exception {
         when(articleFavoriteRepository.find(eq(article.getId()), eq(user.getId()))).thenReturn(Optional.of(new ArticleFavorite(article.getId(), user.getId())));
         given()
             .header("Authorization", "Token " + token)

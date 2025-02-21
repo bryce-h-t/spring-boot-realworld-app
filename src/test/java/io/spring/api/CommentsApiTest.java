@@ -11,8 +11,8 @@ import io.spring.core.article.ArticleRepository;
 import io.spring.core.comment.Comment;
 import io.spring.core.comment.CommentRepository;
 import io.spring.core.user.User;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
@@ -49,8 +49,8 @@ public class CommentsApiTest extends TestWithCurrentUser {
     @Autowired
     private MockMvc mvc;
 
-    @Before
-    public void setUp() throws Exception {
+    @BeforeEach
+    void setUp() throws Exception {
         RestAssuredMockMvc.mockMvc(mvc);
         super.setUp();
         article = new Article("title", "desc", "body", new String[]{"test", "java"}, user.getId());
@@ -66,7 +66,7 @@ public class CommentsApiTest extends TestWithCurrentUser {
     }
 
     @Test
-    public void should_create_comment_success() throws Exception {
+    void should_create_comment_success() throws Exception {
         Map<String, Object> param = new HashMap<String, Object>() {{
             put("comment", new HashMap<String, Object>() {{
                 put("body", "comment content");
@@ -87,7 +87,7 @@ public class CommentsApiTest extends TestWithCurrentUser {
     }
 
     @Test
-    public void should_get_422_with_empty_body() throws Exception {
+    void should_get_422_with_empty_body() throws Exception {
         Map<String, Object> param = new HashMap<String, Object>() {{
             put("comment", new HashMap<String, Object>() {{
                 put("body", "");
@@ -107,7 +107,7 @@ public class CommentsApiTest extends TestWithCurrentUser {
     }
 
     @Test
-    public void should_get_comments_of_article_success() throws Exception {
+    void should_get_comments_of_article_success() throws Exception {
         when(commentQueryService.findByArticleId(anyString(), eq(null))).thenReturn(Arrays.asList(commentData));
         RestAssuredMockMvc.when()
             .get("/articles/{slug}/comments", article.getSlug())
@@ -118,7 +118,7 @@ public class CommentsApiTest extends TestWithCurrentUser {
     }
 
     @Test
-    public void should_delete_comment_success() throws Exception {
+    void should_delete_comment_success() throws Exception {
         when(commentRepository.findById(eq(article.getId()), eq(comment.getId()))).thenReturn(Optional.of(comment));
 
         given()
@@ -130,7 +130,7 @@ public class CommentsApiTest extends TestWithCurrentUser {
     }
 
     @Test
-    public void should_get_403_if_not_author_of_article_or_author_of_comment_when_delete_comment() throws Exception {
+    void should_get_403_if_not_author_of_article_or_author_of_comment_when_delete_comment() throws Exception {
         User anotherUser = new User("other@example.com", "other", "123", "", "");
         when(userRepository.findByUsername(eq(anotherUser.getUsername()))).thenReturn(Optional.of(anotherUser));
         when(jwtService.getSubFromToken(any())).thenReturn(Optional.of(anotherUser.getId()));

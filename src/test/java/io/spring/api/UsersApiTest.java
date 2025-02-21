@@ -20,17 +20,17 @@ import io.spring.infrastructure.service.NaiveEncryptService;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
-import org.junit.Before;
-import org.junit.Test;
-import org.junit.runner.RunWith;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.context.annotation.Import;
-import org.springframework.test.context.junit4.SpringRunner;
+import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.springframework.test.web.servlet.MockMvc;
 
-@RunWith(SpringRunner.class)
+@ExtendWith(SpringExtension.class)
 @WebMvcTest(UsersApi.class)
 @Import({
   WebSecurityConfig.class,
@@ -48,8 +48,8 @@ public class UsersApiTest {
   @MockBean private UserReadService userReadService;
   private String defaultAvatar;
 
-  @Before
-  public void setUp() throws Exception {
+  @BeforeEach
+  void setUp() throws Exception {
     RestAssuredMockMvc.mockMvc(mvc);
     defaultAvatar = "https://static.productionready.io/images/smiley-cyrus.jpg";
   }

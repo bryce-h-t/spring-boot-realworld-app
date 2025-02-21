@@ -3,20 +3,20 @@ package io.spring.infrastructure.favorite;
 import io.spring.core.favorite.ArticleFavorite;
 import io.spring.core.favorite.ArticleFavoriteRepository;
 import io.spring.infrastructure.repository.MyBatisArticleFavoriteRepository;
-import org.junit.Test;
-import org.junit.runner.RunWith;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.mybatis.spring.boot.test.autoconfigure.MybatisTest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Import;
-import org.springframework.test.context.junit4.SpringRunner;
+import org.springframework.test.context.junit.jupiter.SpringExtension;
 
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 
-@RunWith(SpringRunner.class)
+@ExtendWith(SpringExtension.class)
 @MybatisTest
 @Import({MyBatisArticleFavoriteRepository.class})
-public class MyBatisArticleFavoriteRepositoryTest {
+class MyBatisArticleFavoriteRepositoryTest {
     @Autowired
     private ArticleFavoriteRepository articleFavoriteRepository;
 
@@ -24,14 +24,14 @@ public class MyBatisArticleFavoriteRepositoryTest {
     private io.spring.infrastructure.mybatis.mapper.ArticleFavoriteMapper articleFavoriteMapper;
 
     @Test
-    public void should_save_and_fetch_articleFavorite_success() {
+    void should_save_and_fetch_articleFavorite_success() {
         ArticleFavorite articleFavorite = new ArticleFavorite("123", "456");
         articleFavoriteRepository.save(articleFavorite);
         assertNotNull(articleFavoriteMapper.find(articleFavorite.getArticleId(), articleFavorite.getUserId()));
     }
 
     @Test
-    public void should_remove_favorite_success() {
+    void should_remove_favorite_success() {
         ArticleFavorite articleFavorite = new ArticleFavorite("123", "456");
         articleFavoriteRepository.save(articleFavorite);
         articleFavoriteRepository.remove(articleFavorite);

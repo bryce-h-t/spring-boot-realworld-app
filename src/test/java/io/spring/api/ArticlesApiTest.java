@@ -20,8 +20,8 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
 import org.joda.time.DateTime;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
@@ -38,14 +38,14 @@ public class ArticlesApiTest extends TestWithCurrentUser {
   @MockBean private ArticleQueryService articleQueryService;
 
   @Override
-  @Before
-  public void setUp() throws Exception {
+  @BeforeEach
+  void setUp() throws Exception {
     super.setUp();
     RestAssuredMockMvc.mockMvc(mvc);
   }
 
   @Test
-  public void should_create_article_success() throws Exception {
+  void should_create_article_success() throws Exception {
     String title = "How to train your dragon";
     String slug = "how-to-train-your-dragon";
     String description = "Ever wonder how?";
@@ -91,7 +91,7 @@ public class ArticlesApiTest extends TestWithCurrentUser {
   }
 
   @Test
-  public void should_get_error_message_with_wrong_parameter() throws Exception {
+  void should_get_error_message_with_wrong_parameter() throws Exception {
     String title = "How to train your dragon";
     String description = "Ever wonder how?";
     String body = "";
@@ -111,7 +111,7 @@ public class ArticlesApiTest extends TestWithCurrentUser {
   }
 
   @Test
-  public void should_get_error_message_with_duplicated_title() {
+  void should_get_error_message_with_duplicated_title() {
     String title = "How to train your dragon";
     String slug = "how-to-train-your-dragon";
     String description = "Ever wonder how?";
