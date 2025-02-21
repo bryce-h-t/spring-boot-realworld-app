@@ -1,0 +1,580 @@
+Initialized native services in: /home/ubuntu/.gradle/native
+Initialized jansi services in: /home/ubuntu/.gradle/native
+Received JVM installation metadata from '/usr/lib/jvm/java-17-openjdk-amd64': {JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64, JAVA_VERSION=17.0.13, JAVA_VENDOR=Ubuntu, RUNTIME_NAME=OpenJDK Runtime Environment, RUNTIME_VERSION=17.0.13+11-Ubuntu-2ubuntu122.04, VM_NAME=OpenJDK 64-Bit Server VM, VM_VERSION=17.0.13+11-Ubuntu-2ubuntu122.04, VM_VENDOR=Ubuntu, OS_ARCH=amd64}
+The client will now receive all logging from the daemon (pid: 14581). The daemon log file: /home/ubuntu/.gradle/daemon/8.5/daemon-14581.out.log
+Starting 21st build in daemon [uptime: 12 mins 22.925 secs, performance: 98%, GC rate: 0.00/s, heap usage: 0% of 512 MiB, non-heap usage: 24% of 384 MiB]
+Using 2 worker leases.
+Not watching /home/ubuntu/repos/spring-boot-realworld-app since the file system is not supported
+Watching the file system is configured to be enabled if available
+File system watching is active
+Starting Build
+Settings evaluated using settings file '/home/ubuntu/repos/spring-boot-realworld-app/settings.gradle'.
+Projects loaded. Root project using build file '/home/ubuntu/repos/spring-boot-realworld-app/build.gradle'.
+Included projects: [root project 'spring-boot-realworld-example-app']
+
+> Configure project :
+Evaluating root project 'spring-boot-realworld-example-app' using build file '/home/ubuntu/repos/spring-boot-realworld-app/build.gradle'.
+Compiling build file '/home/ubuntu/repos/spring-boot-realworld-app/build.gradle' using SubsetScriptTransformer.
+Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/org.springframework.boot.gradle.plugin/3.2.2/org.springframework.boot.gradle.plugin-3.2.2.pom to /home/ubuntu/.gradle/.tmp/gradle_download523958332473610005bin
+Resource missing. [HTTP HEAD: https://repo.maven.apache.org/maven2/org/springframework/boot/org.springframework.boot.gradle.plugin/3.2.2/org.springframework.boot.gradle.plugin-3.2.2.jar]
+Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-gradle-plugin/3.2.2/spring-boot-gradle-plugin-3.2.2.pom to /home/ubuntu/.gradle/.tmp/gradle_download9203602607543769504bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-gradle-plugin/3.2.2/spring-boot-gradle-plugin-3.2.2.module to /home/ubuntu/.gradle/.tmp/gradle_download14300503594814746544bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-buildpack-platform/3.2.2/spring-boot-buildpack-platform-3.2.2.pom to /home/ubuntu/.gradle/.tmp/gradle_download5034751409642982850bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-buildpack-platform/3.2.2/spring-boot-buildpack-platform-3.2.2.module to /home/ubuntu/.gradle/.tmp/gradle_download3837272599160314089bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-loader-tools/3.2.2/spring-boot-loader-tools-3.2.2.pom to /home/ubuntu/.gradle/.tmp/gradle_download15435243380034908023bin
+Downloading https://repo.maven.apache.org/maven2/org/apache/commons/commons-compress/1.23.0/commons-compress-1.23.0.pom to /home/ubuntu/.gradle/.tmp/gradle_download11030636053500833703bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-loader-tools/3.2.2/spring-boot-loader-tools-3.2.2.module to /home/ubuntu/.gradle/.tmp/gradle_download6869452962380245367bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-core/6.0.10/spring-core-6.0.10.pom to /home/ubuntu/.gradle/.tmp/gradle_download10956796252024986830bin
+Downloading https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/56/commons-parent-56.pom to /home/ubuntu/.gradle/.tmp/gradle_download8438308013607169123bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-core/6.0.10/spring-core-6.0.10.module to /home/ubuntu/.gradle/.tmp/gradle_download13348478676461064049bin
+Cache entries evicted. In-memory cache of /home/ubuntu/repos/spring-boot-realworld-app/.gradle/8.5/checksums/md5-checksums.bin: Size{397} MaxSize{400}, CacheStats{hitCount=0, missCount=437, loadSuccessCount=438, loadExceptionCount=0, totalLoadTime=382108651, evictionCount=41} 
+Performance may suffer from in-memory cache misses. Increase max heap size of Gradle build process to reduce cache misses.
+Downloading https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.9.1/junit-bom-5.9.1.pom to /home/ubuntu/.gradle/.tmp/gradle_download17106611532758405407bin
+Downloading https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.9.1/junit-bom-5.9.1.module to /home/ubuntu/.gradle/.tmp/gradle_download3618208972012805206bin
+Downloading https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.14.2/jackson-databind-2.14.2.pom to /home/ubuntu/.gradle/.tmp/gradle_download13515013679216053641bin
+Downloading https://repo.maven.apache.org/maven2/com/fasterxml/jackson/module/jackson-module-parameter-names/2.14.2/jackson-module-parameter-names-2.14.2.pom to /home/ubuntu/.gradle/.tmp/gradle_download3677907823267700291bin
+Downloading https://repo.maven.apache.org/maven2/com/fasterxml/jackson/jackson-base/2.14.2/jackson-base-2.14.2.pom to /home/ubuntu/.gradle/.tmp/gradle_download7816224400871097768bin
+Downloading https://repo.maven.apache.org/maven2/com/fasterxml/jackson/module/jackson-modules-java8/2.14.2/jackson-modules-java8-2.14.2.pom to /home/ubuntu/.gradle/.tmp/gradle_download9728797044428717003bin
+Downloading https://repo.maven.apache.org/maven2/com/fasterxml/jackson/jackson-bom/2.14.2/jackson-bom-2.14.2.pom to /home/ubuntu/.gradle/.tmp/gradle_download1236150070874129838bin
+Downloading https://repo.maven.apache.org/maven2/com/fasterxml/jackson/jackson-parent/2.14/jackson-parent-2.14.pom to /home/ubuntu/.gradle/.tmp/gradle_download2673517394834135945bin
+Downloading https://repo.maven.apache.org/maven2/com/fasterxml/oss-parent/48/oss-parent-48.pom to /home/ubuntu/.gradle/.tmp/gradle_download10019116284473752486bin
+Downloading https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.14.2/jackson-databind-2.14.2.module to /home/ubuntu/.gradle/.tmp/gradle_download17307445800004700149bin
+Downloading https://repo.maven.apache.org/maven2/com/fasterxml/jackson/module/jackson-module-parameter-names/2.14.2/jackson-module-parameter-names-2.14.2.module to /home/ubuntu/.gradle/.tmp/gradle_download6720157782784623283bin
+Downloading https://repo.maven.apache.org/maven2/org/apache/httpcomponents/client5/httpclient5/5.2.3/httpclient5-5.2.3.pom to /home/ubuntu/.gradle/.tmp/gradle_download9288105143040635667bin
+Downloading https://repo.maven.apache.org/maven2/org/apache/httpcomponents/client5/httpclient5-parent/5.2.3/httpclient5-parent-5.2.3.pom to /home/ubuntu/.gradle/.tmp/gradle_download16116959664599355589bin
+Downloading https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.9.3/junit-bom-5.9.3.pom to /home/ubuntu/.gradle/.tmp/gradle_download7024163998508882223bin
+Cache entries evicted. In-memory cache of /home/ubuntu/repos/spring-boot-realworld-app/.gradle/8.5/checksums/sha1-checksums.bin: Size{400} MaxSize{400}, CacheStats{hitCount=588, missCount=806, loadSuccessCount=801, loadExceptionCount=0, totalLoadTime=404007012, evictionCount=401} 
+Performance may suffer from in-memory cache misses. Increase max heap size of Gradle build process to reduce cache misses.
+Downloading https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.9.3/junit-bom-5.9.3.module to /home/ubuntu/.gradle/.tmp/gradle_download17672681474993243080bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-jcl/6.0.10/spring-jcl-6.0.10.pom to /home/ubuntu/.gradle/.tmp/gradle_download3251815295295300449bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-jcl/6.0.10/spring-jcl-6.0.10.module to /home/ubuntu/.gradle/.tmp/gradle_download13398013701117824811bin
+Downloading https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.14.2/jackson-annotations-2.14.2.pom to /home/ubuntu/.gradle/.tmp/gradle_download375255595919039252bin
+Downloading https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-core/2.14.2/jackson-core-2.14.2.pom to /home/ubuntu/.gradle/.tmp/gradle_download10129090349583636433bin
+Downloading https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.14.2/jackson-annotations-2.14.2.module to /home/ubuntu/.gradle/.tmp/gradle_download14425250602532636720bin
+Downloading https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-core/2.14.2/jackson-core-2.14.2.module to /home/ubuntu/.gradle/.tmp/gradle_download15583068605547481403bin
+Downloading https://repo.maven.apache.org/maven2/org/apache/httpcomponents/core5/httpcore5/5.2.4/httpcore5-5.2.4.pom to /home/ubuntu/.gradle/.tmp/gradle_download9977902348750347084bin
+Downloading https://repo.maven.apache.org/maven2/org/apache/httpcomponents/core5/httpcore5-h2/5.2.4/httpcore5-h2-5.2.4.pom to /home/ubuntu/.gradle/.tmp/gradle_download1142177396899074139bin
+Downloading https://repo.maven.apache.org/maven2/org/apache/httpcomponents/core5/httpcore5-parent/5.2.4/httpcore5-parent-5.2.4.pom to /home/ubuntu/.gradle/.tmp/gradle_download17012163962551646949bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-gradle-plugin/3.2.2/spring-boot-gradle-plugin-3.2.2.jar to /home/ubuntu/.gradle/.tmp/gradle_download13113043348988693611bin
+Downloading https://repo.maven.apache.org/maven2/io/spring/gradle/dependency-management-plugin/1.1.4/dependency-management-plugin-1.1.4.jar to /home/ubuntu/.gradle/.tmp/gradle_download13989007965943374013bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-buildpack-platform/3.2.2/spring-boot-buildpack-platform-3.2.2.jar to /home/ubuntu/.gradle/.tmp/gradle_download15181103439580625099bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-loader-tools/3.2.2/spring-boot-loader-tools-3.2.2.jar to /home/ubuntu/.gradle/.tmp/gradle_download17781910669365292071bin
+Downloading https://repo.maven.apache.org/maven2/org/apache/commons/commons-compress/1.23.0/commons-compress-1.23.0.jar to /home/ubuntu/.gradle/.tmp/gradle_download8942768499233872391bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-core/6.0.10/spring-core-6.0.10.jar to /home/ubuntu/.gradle/.tmp/gradle_download3476963004968942379bin
+Downloading https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.14.2/jackson-annotations-2.14.2.jar to /home/ubuntu/.gradle/.tmp/gradle_download9525342888402978777bin
+Downloading https://repo.maven.apache.org/maven2/com/fasterxml/jackson/module/jackson-module-parameter-names/2.14.2/jackson-module-parameter-names-2.14.2.jar to /home/ubuntu/.gradle/.tmp/gradle_download16615128609570354371bin
+Downloading https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-core/2.14.2/jackson-core-2.14.2.jar to /home/ubuntu/.gradle/.tmp/gradle_download7711259927476418826bin
+Downloading https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.14.2/jackson-databind-2.14.2.jar to /home/ubuntu/.gradle/.tmp/gradle_download17307753908629598523bin
+Downloading https://repo.maven.apache.org/maven2/org/apache/httpcomponents/client5/httpclient5/5.2.3/httpclient5-5.2.3.jar to /home/ubuntu/.gradle/.tmp/gradle_download5647785262944834565bin
+Downloading https://repo.maven.apache.org/maven2/org/apache/httpcomponents/core5/httpcore5-h2/5.2.4/httpcore5-h2-5.2.4.jar to /home/ubuntu/.gradle/.tmp/gradle_download15499037087588776999bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-jcl/6.0.10/spring-jcl-6.0.10.jar to /home/ubuntu/.gradle/.tmp/gradle_download624088896060694920bin
+Downloading https://repo.maven.apache.org/maven2/org/apache/httpcomponents/core5/httpcore5/5.2.4/httpcore5-5.2.4.jar to /home/ubuntu/.gradle/.tmp/gradle_download1324764241400220609bin
+Applying dependency management to configuration 'bootArchives' in project 'spring-boot-realworld-example-app'
+Applying dependency management to configuration 'archives' in project 'spring-boot-realworld-example-app'
+Applying dependency management to configuration 'default' in project 'spring-boot-realworld-example-app'
+Applying dependency management to configuration 'implementation' in project 'spring-boot-realworld-example-app'
+Applying dependency management to configuration 'compileOnly' in project 'spring-boot-realworld-example-app'
+Applying dependency management to configuration 'compileClasspath' in project 'spring-boot-realworld-example-app'
+Applying dependency management to configuration 'annotationProcessor' in project 'spring-boot-realworld-example-app'
+Applying dependency management to configuration 'runtimeOnly' in project 'spring-boot-realworld-example-app'
+Applying dependency management to configuration 'runtimeClasspath' in project 'spring-boot-realworld-example-app'
+Applying dependency management to configuration 'apiElements' in project 'spring-boot-realworld-example-app'
+Applying dependency management to configuration 'runtimeElements' in project 'spring-boot-realworld-example-app'
+Applying dependency management to configuration 'mainSourceElements' in project 'spring-boot-realworld-example-app'
+Applying dependency management to configuration 'testImplementation' in project 'spring-boot-realworld-example-app'
+Applying dependency management to configuration 'testCompileOnly' in project 'spring-boot-realworld-example-app'
+Applying dependency management to configuration 'testCompileClasspath' in project 'spring-boot-realworld-example-app'
+Applying dependency management to configuration 'testAnnotationProcessor' in project 'spring-boot-realworld-example-app'
+Applying dependency management to configuration 'testRuntimeOnly' in project 'spring-boot-realworld-example-app'
+Applying dependency management to configuration 'testRuntimeClasspath' in project 'spring-boot-realworld-example-app'
+Applying dependency management to configuration 'testResultsElementsForTest' in project 'spring-boot-realworld-example-app'
+Applying dependency management to configuration 'productionRuntimeClasspath' in project 'spring-boot-realworld-example-app'
+Applying dependency management to configuration 'developmentOnly' in project 'spring-boot-realworld-example-app'
+Applying dependency management to configuration 'testAndDevelopmentOnly' in project 'spring-boot-realworld-example-app'
+Compiling build file '/home/ubuntu/repos/spring-boot-realworld-app/build.gradle' using BuildScriptTransformer.
+All projects evaluated.
+Task name matched 'test'
+Selected primary task 'test' from project :
+Tasks to be executed: [task ':compileJava', task ':processResources', task ':classes', task ':compileTestJava', task ':processTestResources', task ':testClasses', task ':test']
+Tasks that were excluded: []
+Resolve mutations for :compileJava (Thread[included builds,5,main]) started.
+:compileJava (Thread[included builds,5,main]) started.
+
+> Task :compileJava
+Resolving global dependency management for project 'spring-boot-realworld-example-app'
+Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-dependencies/3.2.2/spring-boot-dependencies-3.2.2.pom to /home/ubuntu/.gradle/.tmp/gradle_download9104110665914008405bin
+Downloading https://repo.maven.apache.org/maven2/io/dropwizard/metrics/metrics-bom/4.2.23/metrics-bom-4.2.23.pom to /home/ubuntu/.gradle/.tmp/gradle_download10844606392743087793bin
+Downloading https://repo.maven.apache.org/maven2/io/dropwizard/metrics/metrics-parent/4.2.23/metrics-parent-4.2.23.pom to /home/ubuntu/.gradle/.tmp/gradle_download12216011237271493316bin
+Downloading https://repo.maven.apache.org/maven2/org/apache/groovy/groovy-bom/4.0.17/groovy-bom-4.0.17.pom to /home/ubuntu/.gradle/.tmp/gradle_download10892611802864576616bin
+Downloading https://repo.maven.apache.org/maven2/org/apache/groovy/groovy-bom/4.0.17/groovy-bom-4.0.17.module to /home/ubuntu/.gradle/.tmp/gradle_download17465122719991518591bin
+Cache entries evicted. In-memory cache of /home/ubuntu/repos/spring-boot-realworld-app/.gradle/8.5/checksums/sha1-checksums.bin: Size{400} MaxSize{400}, CacheStats{hitCount=608, missCount=847, loadSuccessCount=841, loadExceptionCount=0, totalLoadTime=460557731, evictionCount=441} 
+Performance may suffer from in-memory cache misses. Increase max heap size of Gradle build process to reduce cache misses.
+Downloading https://repo.maven.apache.org/maven2/org/glassfish/jersey/jersey-bom/3.1.5/jersey-bom-3.1.5.pom to /home/ubuntu/.gradle/.tmp/gradle_download7624017725915292536bin
+Downloading https://repo.maven.apache.org/maven2/org/eclipse/jetty/ee10/jetty-ee10-bom/12.0.5/jetty-ee10-bom-12.0.5.pom to /home/ubuntu/.gradle/.tmp/gradle_download717080930662541591bin
+Downloading https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-bom/12.0.5/jetty-bom-12.0.5.pom to /home/ubuntu/.gradle/.tmp/gradle_download9238834183270117982bin
+Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-bom/1.9.22/kotlin-bom-1.9.22.pom to /home/ubuntu/.gradle/.tmp/gradle_download11468355833231003335bin
+Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-serialization-bom/1.6.2/kotlinx-serialization-bom-1.6.2.pom to /home/ubuntu/.gradle/.tmp/gradle_download7063918335378924836bin
+Downloading https://repo.maven.apache.org/maven2/io/micrometer/micrometer-bom/1.12.2/micrometer-bom-1.12.2.pom to /home/ubuntu/.gradle/.tmp/gradle_download4688453178032565091bin
+Downloading https://repo.maven.apache.org/maven2/io/micrometer/micrometer-tracing-bom/1.2.2/micrometer-tracing-bom-1.2.2.pom to /home/ubuntu/.gradle/.tmp/gradle_download4509929324175730660bin
+Downloading https://repo.maven.apache.org/maven2/io/netty/netty-bom/4.1.105.Final/netty-bom-4.1.105.Final.pom to /home/ubuntu/.gradle/.tmp/gradle_download2423306185453982538bin
+Downloading https://repo.maven.apache.org/maven2/com/oracle/database/jdbc/ojdbc-bom/21.9.0.0/ojdbc-bom-21.9.0.0.pom to /home/ubuntu/.gradle/.tmp/gradle_download6633890202356074845bin
+Downloading https://repo.maven.apache.org/maven2/io/projectreactor/reactor-bom/2023.0.2/reactor-bom-2023.0.2.pom to /home/ubuntu/.gradle/.tmp/gradle_download16514133390755750415bin
+Downloading https://repo.maven.apache.org/maven2/io/projectreactor/reactor-bom/2023.0.2/reactor-bom-2023.0.2.module to /home/ubuntu/.gradle/.tmp/gradle_download10762630822429902133bin
+Cache entries evicted. In-memory cache of /home/ubuntu/repos/spring-boot-realworld-app/.gradle/8.5/checksums/sha1-checksums.bin: Size{400} MaxSize{400}, CacheStats{hitCount=614, missCount=887, loadSuccessCount=881, loadExceptionCount=0, totalLoadTime=489888516, evictionCount=481} 
+Performance may suffer from in-memory cache misses. Increase max heap size of Gradle build process to reduce cache misses.
+Downloading https://repo.maven.apache.org/maven2/org/springframework/amqp/spring-amqp-bom/3.1.1/spring-amqp-bom-3.1.1.pom to /home/ubuntu/.gradle/.tmp/gradle_download10146250342877405161bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/amqp/spring-amqp-bom/3.1.1/spring-amqp-bom-3.1.1.module to /home/ubuntu/.gradle/.tmp/gradle_download18285199643364016346bin
+Cache entries evicted. In-memory cache of /home/ubuntu/repos/spring-boot-realworld-app/.gradle/8.5/checksums/md5-checksums.bin: Size{400} MaxSize{400}, CacheStats{hitCount=0, missCount=480, loadSuccessCount=481, loadExceptionCount=0, totalLoadTime=401131698, evictionCount=81} 
+Performance may suffer from in-memory cache misses. Increase max heap size of Gradle build process to reduce cache misses.
+Downloading https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-bom/2023.1.2/spring-data-bom-2023.1.2.pom to /home/ubuntu/.gradle/.tmp/gradle_download2325534134208699260bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-framework-bom/6.1.3/spring-framework-bom-6.1.3.pom to /home/ubuntu/.gradle/.tmp/gradle_download15513485739263889468bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-framework-bom/6.1.3/spring-framework-bom-6.1.3.module to /home/ubuntu/.gradle/.tmp/gradle_download5218636849739112264bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/integration/spring-integration-bom/6.2.1/spring-integration-bom-6.2.1.pom to /home/ubuntu/.gradle/.tmp/gradle_download1621463102585199464bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/integration/spring-integration-bom/6.2.1/spring-integration-bom-6.2.1.module to /home/ubuntu/.gradle/.tmp/gradle_download12104895472609180123bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/pulsar/spring-pulsar-bom/1.0.2/spring-pulsar-bom-1.0.2.pom to /home/ubuntu/.gradle/.tmp/gradle_download12773558342627337541bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/pulsar/spring-pulsar-bom/1.0.2/spring-pulsar-bom-1.0.2.module to /home/ubuntu/.gradle/.tmp/gradle_download11583032953990703627bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/security/spring-security-bom/6.2.1/spring-security-bom-6.2.1.pom to /home/ubuntu/.gradle/.tmp/gradle_download6257009550906444126bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/security/spring-security-bom/6.2.1/spring-security-bom-6.2.1.module to /home/ubuntu/.gradle/.tmp/gradle_download8759792089676028225bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/session/spring-session-bom/3.2.1/spring-session-bom-3.2.1.pom to /home/ubuntu/.gradle/.tmp/gradle_download1010101573074408324bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/session/spring-session-bom/3.2.1/spring-session-bom-3.2.1.module to /home/ubuntu/.gradle/.tmp/gradle_download4710794611081732437bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/ws/spring-ws-bom/4.0.10/spring-ws-bom-4.0.10.pom to /home/ubuntu/.gradle/.tmp/gradle_download131586354121120978bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-web/3.2.2/spring-boot-starter-web-3.2.2.pom to /home/ubuntu/.gradle/.tmp/gradle_download10642278570034597114bin
+Downloading https://repo.maven.apache.org/maven2/org/projectlombok/lombok/1.18.30/lombok-1.18.30.pom to /home/ubuntu/.gradle/.tmp/gradle_download14969918238840077671bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-validation/3.2.2/spring-boot-starter-validation-3.2.2.pom to /home/ubuntu/.gradle/.tmp/gradle_download14322527745035535861bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-web/3.2.2/spring-boot-starter-web-3.2.2.module to /home/ubuntu/.gradle/.tmp/gradle_download13453631532525452931bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-validation/3.2.2/spring-boot-starter-validation-3.2.2.module to /home/ubuntu/.gradle/.tmp/gradle_download16652709297915334140bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-data-jpa/3.2.2/spring-boot-starter-data-jpa-3.2.2.pom to /home/ubuntu/.gradle/.tmp/gradle_download2238195063918500343bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-hateoas/3.2.2/spring-boot-starter-hateoas-3.2.2.pom to /home/ubuntu/.gradle/.tmp/gradle_download2935551988174704599bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-hateoas/3.2.2/spring-boot-starter-hateoas-3.2.2.module to /home/ubuntu/.gradle/.tmp/gradle_download699786380364147460bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-data-jpa/3.2.2/spring-boot-starter-data-jpa-3.2.2.module to /home/ubuntu/.gradle/.tmp/gradle_download18278433089642132993bin
+Downloading https://repo.maven.apache.org/maven2/org/flywaydb/flyway-core/9.22.3/flyway-core-9.22.3.pom to /home/ubuntu/.gradle/.tmp/gradle_download14518859516470305008bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-security/3.2.2/spring-boot-starter-security-3.2.2.pom to /home/ubuntu/.gradle/.tmp/gradle_download4841604783758009148bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-security/3.2.2/spring-boot-starter-security-3.2.2.module to /home/ubuntu/.gradle/.tmp/gradle_download5167822630266885153bin
+Downloading https://repo.maven.apache.org/maven2/org/flywaydb/flyway-parent/9.22.3/flyway-parent-9.22.3.pom to /home/ubuntu/.gradle/.tmp/gradle_download8293335090936276388bin
+Cache entries evicted. In-memory cache of /home/ubuntu/repos/spring-boot-realworld-app/.gradle/8.5/checksums/sha1-checksums.bin: Size{400} MaxSize{400}, CacheStats{hitCount=614, missCount=927, loadSuccessCount=921, loadExceptionCount=0, totalLoadTime=517041209, evictionCount=521} 
+Performance may suffer from in-memory cache misses. Increase max heap size of Gradle build process to reduce cache misses.
+Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter/3.2.2/spring-boot-starter-3.2.2.pom to /home/ubuntu/.gradle/.tmp/gradle_download12895691936002055660bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-json/3.2.2/spring-boot-starter-json-3.2.2.pom to /home/ubuntu/.gradle/.tmp/gradle_download17496585759948829154bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter/3.2.2/spring-boot-starter-3.2.2.module to /home/ubuntu/.gradle/.tmp/gradle_download745064760051209639bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-json/3.2.2/spring-boot-starter-json-3.2.2.module to /home/ubuntu/.gradle/.tmp/gradle_download13137046826735533507bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-tomcat/3.2.2/spring-boot-starter-tomcat-3.2.2.pom to /home/ubuntu/.gradle/.tmp/gradle_download14448564158974176845bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-web/6.1.3/spring-web-6.1.3.pom to /home/ubuntu/.gradle/.tmp/gradle_download16862687269652928247bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-web/6.1.3/spring-web-6.1.3.module to /home/ubuntu/.gradle/.tmp/gradle_download7861837364475815276bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-tomcat/3.2.2/spring-boot-starter-tomcat-3.2.2.module to /home/ubuntu/.gradle/.tmp/gradle_download15505390265810836677bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-webmvc/6.1.3/spring-webmvc-6.1.3.pom to /home/ubuntu/.gradle/.tmp/gradle_download2427030059438305976bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-webmvc/6.1.3/spring-webmvc-6.1.3.module to /home/ubuntu/.gradle/.tmp/gradle_download1296597299417445696bin
+Downloading https://repo.maven.apache.org/maven2/org/hibernate/validator/hibernate-validator/8.0.1.Final/hibernate-validator-8.0.1.Final.pom to /home/ubuntu/.gradle/.tmp/gradle_download12518008487997367261bin
+Downloading https://repo.maven.apache.org/maven2/org/apache/tomcat/embed/tomcat-embed-el/10.1.18/tomcat-embed-el-10.1.18.pom to /home/ubuntu/.gradle/.tmp/gradle_download7062612238483230562bin
+Downloading https://repo.maven.apache.org/maven2/org/hibernate/validator/hibernate-validator-parent/8.0.1.Final/hibernate-validator-parent-8.0.1.Final.pom to /home/ubuntu/.gradle/.tmp/gradle_download17656597501566165423bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-aop/3.2.2/spring-boot-starter-aop-3.2.2.pom to /home/ubuntu/.gradle/.tmp/gradle_download14264233475852886187bin
+Cache entries evicted. In-memory cache of /home/ubuntu/repos/spring-boot-realworld-app/.gradle/8.5/checksums/md5-checksums.bin: Size{400} MaxSize{400}, CacheStats{hitCount=0, missCount=520, loadSuccessCount=521, loadExceptionCount=0, totalLoadTime=440959630, evictionCount=121} 
+Performance may suffer from in-memory cache misses. Increase max heap size of Gradle build process to reduce cache misses.
+Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-jdbc/3.2.2/spring-boot-starter-jdbc-3.2.2.pom to /home/ubuntu/.gradle/.tmp/gradle_download14479512709546760997bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-aop/3.2.2/spring-boot-starter-aop-3.2.2.module to /home/ubuntu/.gradle/.tmp/gradle_download6446025812175222832bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-jdbc/3.2.2/spring-boot-starter-jdbc-3.2.2.module to /home/ubuntu/.gradle/.tmp/gradle_download1892636268541514436bin
+Downloading https://repo.maven.apache.org/maven2/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.pom to /home/ubuntu/.gradle/.tmp/gradle_download17535775668639690630bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-jpa/3.2.2/spring-data-jpa-3.2.2.pom to /home/ubuntu/.gradle/.tmp/gradle_download16806145178500464353bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-aspects/6.1.3/spring-aspects-6.1.3.pom to /home/ubuntu/.gradle/.tmp/gradle_download1272262735043526344bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-jpa-parent/3.2.2/spring-data-jpa-parent-3.2.2.pom to /home/ubuntu/.gradle/.tmp/gradle_download9308558025481154068bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-aspects/6.1.3/spring-aspects-6.1.3.module to /home/ubuntu/.gradle/.tmp/gradle_download5935169043346876586bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/data/build/spring-data-parent/3.2.2/spring-data-parent-3.2.2.pom to /home/ubuntu/.gradle/.tmp/gradle_download11862266941301164814bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/data/build/spring-data-build/3.2.2/spring-data-build-3.2.2.pom to /home/ubuntu/.gradle/.tmp/gradle_download12260392845397347710bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/hateoas/spring-hateoas/2.2.0/spring-hateoas-2.2.0.pom to /home/ubuntu/.gradle/.tmp/gradle_download6139093439455699849bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-aop/6.1.3/spring-aop-6.1.3.pom to /home/ubuntu/.gradle/.tmp/gradle_download4701344347805325268bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/security/spring-security-config/6.2.1/spring-security-config-6.2.1.pom to /home/ubuntu/.gradle/.tmp/gradle_download15219509248097874271bin
+Cache entries evicted. In-memory cache of /home/ubuntu/repos/spring-boot-realworld-app/.gradle/8.5/checksums/sha1-checksums.bin: Size{400} MaxSize{400}, CacheStats{hitCount=664, missCount=967, loadSuccessCount=961, loadExceptionCount=0, totalLoadTime=534810973, evictionCount=561} 
+Performance may suffer from in-memory cache misses. Increase max heap size of Gradle build process to reduce cache misses.
+Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-aop/6.1.3/spring-aop-6.1.3.module to /home/ubuntu/.gradle/.tmp/gradle_download10680584049206812929bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/security/spring-security-config/6.2.1/spring-security-config-6.2.1.module to /home/ubuntu/.gradle/.tmp/gradle_download2131408906671927164bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/security/spring-security-web/6.2.1/spring-security-web-6.2.1.pom to /home/ubuntu/.gradle/.tmp/gradle_download15581960222513494477bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/security/spring-security-web/6.2.1/spring-security-web-6.2.1.module to /home/ubuntu/.gradle/.tmp/gradle_download512548538250702658bin
+Downloading https://repo.maven.apache.org/maven2/com/fasterxml/jackson/dataformat/jackson-dataformat-toml/2.15.3/jackson-dataformat-toml-2.15.3.pom to /home/ubuntu/.gradle/.tmp/gradle_download12054430018239720624bin
+Downloading https://repo.maven.apache.org/maven2/com/google/code/gson/gson/2.10.1/gson-2.10.1.pom to /home/ubuntu/.gradle/.tmp/gradle_download16700474410981457484bin
+Downloading https://repo.maven.apache.org/maven2/com/fasterxml/jackson/dataformat/jackson-dataformats-text/2.15.3/jackson-dataformats-text-2.15.3.pom to /home/ubuntu/.gradle/.tmp/gradle_download9176516114786482520bin
+Downloading https://repo.maven.apache.org/maven2/com/google/code/gson/gson-parent/2.10.1/gson-parent-2.10.1.pom to /home/ubuntu/.gradle/.tmp/gradle_download3683639321327605598bin
+Downloading https://repo.maven.apache.org/maven2/com/fasterxml/jackson/jackson-base/2.15.3/jackson-base-2.15.3.pom to /home/ubuntu/.gradle/.tmp/gradle_download11830312767646278902bin
+Downloading https://repo.maven.apache.org/maven2/com/fasterxml/jackson/dataformat/jackson-dataformat-toml/2.15.3/jackson-dataformat-toml-2.15.3.module to /home/ubuntu/.gradle/.tmp/gradle_download9445522290699073119bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-autoconfigure/3.2.2/spring-boot-autoconfigure-3.2.2.pom to /home/ubuntu/.gradle/.tmp/gradle_download9429357576333900153bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot/3.2.2/spring-boot-3.2.2.pom to /home/ubuntu/.gradle/.tmp/gradle_download12849480229000219175bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot/3.2.2/spring-boot-3.2.2.module to /home/ubuntu/.gradle/.tmp/gradle_download17788585549479787507bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-autoconfigure/3.2.2/spring-boot-autoconfigure-3.2.2.module to /home/ubuntu/.gradle/.tmp/gradle_download13974412351703223081bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-logging/3.2.2/spring-boot-starter-logging-3.2.2.pom to /home/ubuntu/.gradle/.tmp/gradle_download13146844501788801061bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-core/6.1.3/spring-core-6.1.3.pom to /home/ubuntu/.gradle/.tmp/gradle_download16447085754487730519bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-logging/3.2.2/spring-boot-starter-logging-3.2.2.module to /home/ubuntu/.gradle/.tmp/gradle_download11611642161158771714bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-core/6.1.3/spring-core-6.1.3.module to /home/ubuntu/.gradle/.tmp/gradle_download2568896098753469664bin
+Downloading https://repo.maven.apache.org/maven2/org/yaml/snakeyaml/2.2/snakeyaml-2.2.pom to /home/ubuntu/.gradle/.tmp/gradle_download16561139009865518926bin
+Downloading https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.15.3/jackson-databind-2.15.3.pom to /home/ubuntu/.gradle/.tmp/gradle_download14430163973039800953bin
+Downloading https://repo.maven.apache.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.15.3/jackson-datatype-jdk8-2.15.3.pom to /home/ubuntu/.gradle/.tmp/gradle_download10224665044495775266bin
+Downloading https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.9.2/junit-bom-5.9.2.pom to /home/ubuntu/.gradle/.tmp/gradle_download6558479248972061161bin
+Downloading https://repo.maven.apache.org/maven2/com/fasterxml/jackson/module/jackson-modules-java8/2.15.3/jackson-modules-java8-2.15.3.pom to /home/ubuntu/.gradle/.tmp/gradle_download7939798610601381817bin
+Downloading https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.9.2/junit-bom-5.9.2.module to /home/ubuntu/.gradle/.tmp/gradle_download2955576262825149951bin
+Downloading https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.15.3/jackson-databind-2.15.3.module to /home/ubuntu/.gradle/.tmp/gradle_download9464508522690329838bin
+Downloading https://repo.maven.apache.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.15.3/jackson-datatype-jdk8-2.15.3.module to /home/ubuntu/.gradle/.tmp/gradle_download14083143033400040366bin
+Downloading https://repo.maven.apache.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.15.3/jackson-datatype-jsr310-2.15.3.pom to /home/ubuntu/.gradle/.tmp/gradle_download16773305910479662018bin
+Downloading https://repo.maven.apache.org/maven2/com/fasterxml/jackson/module/jackson-module-parameter-names/2.15.3/jackson-module-parameter-names-2.15.3.pom to /home/ubuntu/.gradle/.tmp/gradle_download8805861725385546178bin
+Cache entries evicted. In-memory cache of /home/ubuntu/repos/spring-boot-realworld-app/.gradle/8.5/checksums/md5-checksums.bin: Size{400} MaxSize{400}, CacheStats{hitCount=0, missCount=560, loadSuccessCount=561, loadExceptionCount=0, totalLoadTime=461996085, evictionCount=161} 
+Performance may suffer from in-memory cache misses. Increase max heap size of Gradle build process to reduce cache misses.
+Downloading https://repo.maven.apache.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.15.3/jackson-datatype-jsr310-2.15.3.module to /home/ubuntu/.gradle/.tmp/gradle_download269933981685847420bin
+Downloading https://repo.maven.apache.org/maven2/com/fasterxml/jackson/module/jackson-module-parameter-names/2.15.3/jackson-module-parameter-names-2.15.3.module to /home/ubuntu/.gradle/.tmp/gradle_download1208243479556956092bin
+Downloading https://repo.maven.apache.org/maven2/org/apache/tomcat/embed/tomcat-embed-core/10.1.18/tomcat-embed-core-10.1.18.pom to /home/ubuntu/.gradle/.tmp/gradle_download15979218417490912696bin
+Downloading https://repo.maven.apache.org/maven2/org/apache/tomcat/embed/tomcat-embed-websocket/10.1.18/tomcat-embed-websocket-10.1.18.pom to /home/ubuntu/.gradle/.tmp/gradle_download7703806703815981401bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-beans/6.1.3/spring-beans-6.1.3.pom to /home/ubuntu/.gradle/.tmp/gradle_download18255127577618819536bin
+Downloading https://repo.maven.apache.org/maven2/io/micrometer/micrometer-observation/1.12.2/micrometer-observation-1.12.2.pom to /home/ubuntu/.gradle/.tmp/gradle_download7435001902335281174bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-beans/6.1.3/spring-beans-6.1.3.module to /home/ubuntu/.gradle/.tmp/gradle_download18168217689385107659bin
+Cache entries evicted. In-memory cache of /home/ubuntu/repos/spring-boot-realworld-app/.gradle/8.5/checksums/sha1-checksums.bin: Size{400} MaxSize{400}, CacheStats{hitCount=696, missCount=1007, loadSuccessCount=1001, loadExceptionCount=0, totalLoadTime=563938248, evictionCount=601} 
+Performance may suffer from in-memory cache misses. Increase max heap size of Gradle build process to reduce cache misses.
+Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-expression/6.1.3/spring-expression-6.1.3.pom to /home/ubuntu/.gradle/.tmp/gradle_download7880249762562031278bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-context/6.1.3/spring-context-6.1.3.pom to /home/ubuntu/.gradle/.tmp/gradle_download1810139195785395832bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-expression/6.1.3/spring-expression-6.1.3.module to /home/ubuntu/.gradle/.tmp/gradle_download17811553458958842734bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-context/6.1.3/spring-context-6.1.3.module to /home/ubuntu/.gradle/.tmp/gradle_download12635048733044875237bin
+Downloading https://repo.maven.apache.org/maven2/org/jboss/logging/jboss-logging/3.5.3.Final/jboss-logging-3.5.3.Final.pom to /home/ubuntu/.gradle/.tmp/gradle_download9121523503663857850bin
+Downloading https://repo.maven.apache.org/maven2/com/fasterxml/classmate/1.6.0/classmate-1.6.0.pom to /home/ubuntu/.gradle/.tmp/gradle_download16656477747539823134bin
+Downloading https://repo.maven.apache.org/maven2/org/jboss/logging/logging-parent/1.0.1.Final/logging-parent-1.0.1.Final.pom to /home/ubuntu/.gradle/.tmp/gradle_download14885759383790987428bin
+Downloading https://repo.maven.apache.org/maven2/com/fasterxml/oss-parent/55/oss-parent-55.pom to /home/ubuntu/.gradle/.tmp/gradle_download7726222374975750010bin
+Downloading https://repo.maven.apache.org/maven2/org/aspectj/aspectjweaver/1.9.21/aspectjweaver-1.9.21.pom to /home/ubuntu/.gradle/.tmp/gradle_download7041076914831566194bin
+Downloading https://repo.maven.apache.org/maven2/com/zaxxer/HikariCP/5.0.1/HikariCP-5.0.1.pom to /home/ubuntu/.gradle/.tmp/gradle_download16516816613937848404bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-jdbc/6.1.3/spring-jdbc-6.1.3.pom to /home/ubuntu/.gradle/.tmp/gradle_download8672118889812673639bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-jdbc/6.1.3/spring-jdbc-6.1.3.module to /home/ubuntu/.gradle/.tmp/gradle_download6236588945770497105bin
+Downloading https://repo.maven.apache.org/maven2/org/hibernate/common/hibernate-commons-annotations/6.0.6.Final/hibernate-commons-annotations-6.0.6.Final.pom to /home/ubuntu/.gradle/.tmp/gradle_download8246338441733708881bin
+Downloading https://repo.maven.apache.org/maven2/io/smallrye/jandex/3.1.2/jandex-3.1.2.pom to /home/ubuntu/.gradle/.tmp/gradle_download276519794783219477bin
+Downloading https://repo.maven.apache.org/maven2/io/smallrye/jandex-parent/3.1.2/jandex-parent-3.1.2.pom to /home/ubuntu/.gradle/.tmp/gradle_download13494635878114272125bin
+Downloading https://repo.maven.apache.org/maven2/org/hibernate/common/hibernate-commons-annotations/6.0.6.Final/hibernate-commons-annotations-6.0.6.Final.module to /home/ubuntu/.gradle/.tmp/gradle_download17820293268393455550bin
+Downloading https://repo.maven.apache.org/maven2/io/smallrye/smallrye-build-parent/39/smallrye-build-parent-39.pom to /home/ubuntu/.gradle/.tmp/gradle_download8389932597631515180bin
+Downloading https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy/1.14.11/byte-buddy-1.14.11.pom to /home/ubuntu/.gradle/.tmp/gradle_download3160190888501072529bin
+Downloading https://repo.maven.apache.org/maven2/jakarta/xml/bind/jakarta.xml.bind-api/4.0.1/jakarta.xml.bind-api-4.0.1.pom to /home/ubuntu/.gradle/.tmp/gradle_download9410699294264719989bin
+Downloading https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy-parent/1.14.11/byte-buddy-parent-1.14.11.pom to /home/ubuntu/.gradle/.tmp/gradle_download17263494579844198246bin
+Downloading https://repo.maven.apache.org/maven2/jakarta/xml/bind/jakarta.xml.bind-api-parent/4.0.1/jakarta.xml.bind-api-parent-4.0.1.pom to /home/ubuntu/.gradle/.tmp/gradle_download11135188349033064792bin
+Downloading https://repo.maven.apache.org/maven2/org/glassfish/jaxb/jaxb-runtime/4.0.4/jaxb-runtime-4.0.4.pom to /home/ubuntu/.gradle/.tmp/gradle_download11369718470894531971bin
+Downloading https://repo.maven.apache.org/maven2/com/sun/xml/bind/mvn/jaxb-runtime-parent/4.0.4/jaxb-runtime-parent-4.0.4.pom to /home/ubuntu/.gradle/.tmp/gradle_download12728441361378159355bin
+Downloading https://repo.maven.apache.org/maven2/com/sun/xml/bind/mvn/jaxb-parent/4.0.4/jaxb-parent-4.0.4.pom to /home/ubuntu/.gradle/.tmp/gradle_download13425646841808445357bin
+Downloading https://repo.maven.apache.org/maven2/com/sun/xml/bind/jaxb-bom-ext/4.0.4/jaxb-bom-ext-4.0.4.pom to /home/ubuntu/.gradle/.tmp/gradle_download9963837630256682194bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-orm/6.1.3/spring-orm-6.1.3.pom to /home/ubuntu/.gradle/.tmp/gradle_download9234078239060093605bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-commons/3.2.2/spring-data-commons-3.2.2.pom to /home/ubuntu/.gradle/.tmp/gradle_download14384053162480899123bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-orm/6.1.3/spring-orm-6.1.3.module to /home/ubuntu/.gradle/.tmp/gradle_download12585279364359392415bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-tx/6.1.3/spring-tx-6.1.3.pom to /home/ubuntu/.gradle/.tmp/gradle_download2974201542313617480bin
+Downloading https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/2.0.11/slf4j-api-2.0.11.pom to /home/ubuntu/.gradle/.tmp/gradle_download7859656874611979951bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-tx/6.1.3/spring-tx-6.1.3.module to /home/ubuntu/.gradle/.tmp/gradle_download6501138198231147993bin
+Cache entries evicted. In-memory cache of /home/ubuntu/repos/spring-boot-realworld-app/.gradle/8.5/checksums/sha1-checksums.bin: Size{400} MaxSize{400}, CacheStats{hitCount=726, missCount=1047, loadSuccessCount=1041, loadExceptionCount=0, totalLoadTime=584810898, evictionCount=641} 
+Performance may suffer from in-memory cache misses. Increase max heap size of Gradle build process to reduce cache misses.
+Downloading https://repo.maven.apache.org/maven2/org/slf4j/slf4j-parent/2.0.11/slf4j-parent-2.0.11.pom to /home/ubuntu/.gradle/.tmp/gradle_download9615787753904639280bin
+Downloading https://repo.maven.apache.org/maven2/org/slf4j/slf4j-bom/2.0.11/slf4j-bom-2.0.11.pom to /home/ubuntu/.gradle/.tmp/gradle_download11834618057719854584bin
+Cache entries evicted. In-memory cache of /home/ubuntu/repos/spring-boot-realworld-app/.gradle/8.5/checksums/md5-checksums.bin: Size{400} MaxSize{400}, CacheStats{hitCount=0, missCount=600, loadSuccessCount=601, loadExceptionCount=0, totalLoadTime=512391214, evictionCount=201} 
+Performance may suffer from in-memory cache misses. Increase max heap size of Gradle build process to reduce cache misses.
+Downloading https://repo.maven.apache.org/maven2/com/jayway/jsonpath/json-path/2.8.0/json-path-2.8.0.pom to /home/ubuntu/.gradle/.tmp/gradle_download3765100984122660229bin
+Downloading https://repo.maven.apache.org/maven2/com/jayway/jsonpath/json-path/2.8.0/json-path-2.8.0.module to /home/ubuntu/.gradle/.tmp/gradle_download8196623551743173960bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/security/spring-security-core/6.2.1/spring-security-core-6.2.1.pom to /home/ubuntu/.gradle/.tmp/gradle_download18011045412184959544bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/security/spring-security-core/6.2.1/spring-security-core-6.2.1.module to /home/ubuntu/.gradle/.tmp/gradle_download5707568677170942960bin
+Downloading https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-core/2.15.3/jackson-core-2.15.3.pom to /home/ubuntu/.gradle/.tmp/gradle_download3766175364540383391bin
+Downloading https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-core/2.15.3/jackson-core-2.15.3.module to /home/ubuntu/.gradle/.tmp/gradle_download8254582707345498610bin
+Downloading https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j-to-slf4j/2.21.1/log4j-to-slf4j-2.21.1.pom to /home/ubuntu/.gradle/.tmp/gradle_download12297181056326186167bin
+Downloading https://repo.maven.apache.org/maven2/ch/qos/logback/logback-classic/1.4.14/logback-classic-1.4.14.pom to /home/ubuntu/.gradle/.tmp/gradle_download15259053802522030250bin
+Downloading https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j/2.21.1/log4j-2.21.1.pom to /home/ubuntu/.gradle/.tmp/gradle_download6537697990802672817bin
+Downloading https://repo.maven.apache.org/maven2/ch/qos/logback/logback-parent/1.4.14/logback-parent-1.4.14.pom to /home/ubuntu/.gradle/.tmp/gradle_download17279494202455813605bin
+Downloading https://repo.maven.apache.org/maven2/org/ow2/asm/asm-bom/9.5/asm-bom-9.5.pom to /home/ubuntu/.gradle/.tmp/gradle_download15254027691997002839bin
+Downloading https://repo.maven.apache.org/maven2/org/slf4j/jul-to-slf4j/2.0.11/jul-to-slf4j-2.0.11.pom to /home/ubuntu/.gradle/.tmp/gradle_download4352606979106526746bin
+Downloading https://repo.maven.apache.org/maven2/org/codehaus/groovy/groovy-bom/3.0.19/groovy-bom-3.0.19.pom to /home/ubuntu/.gradle/.tmp/gradle_download14683911411641072571bin
+Downloading https://repo.maven.apache.org/maven2/com/fasterxml/jackson/jackson-bom/2.15.2/jackson-bom-2.15.2.pom to /home/ubuntu/.gradle/.tmp/gradle_download61835764710125833bin
+Downloading https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-bom/9.4.53.v20231009/jetty-bom-9.4.53.v20231009.pom to /home/ubuntu/.gradle/.tmp/gradle_download17068354220831371989bin
+Downloading https://repo.maven.apache.org/maven2/io/fabric8/kubernetes-client-bom/5.12.4/kubernetes-client-bom-5.12.4.pom to /home/ubuntu/.gradle/.tmp/gradle_download3872593094062836780bin
+Downloading https://repo.maven.apache.org/maven2/io/netty/netty-bom/4.1.97.Final/netty-bom-4.1.97.Final.pom to /home/ubuntu/.gradle/.tmp/gradle_download487087204814425947bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-framework-bom/5.3.29/spring-framework-bom-5.3.29.pom to /home/ubuntu/.gradle/.tmp/gradle_download18075990896859615200bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-framework-bom/5.3.29/spring-framework-bom-5.3.29.module to /home/ubuntu/.gradle/.tmp/gradle_download5473536125052465075bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-jcl/6.1.3/spring-jcl-6.1.3.pom to /home/ubuntu/.gradle/.tmp/gradle_download12760063565771462059bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-jcl/6.1.3/spring-jcl-6.1.3.module to /home/ubuntu/.gradle/.tmp/gradle_download1362063678773054575bin
+Cache entries evicted. In-memory cache of /home/ubuntu/repos/spring-boot-realworld-app/.gradle/8.5/checksums/sha1-checksums.bin: Size{400} MaxSize{400}, CacheStats{hitCount=764, missCount=1087, loadSuccessCount=1081, loadExceptionCount=0, totalLoadTime=605060230, evictionCount=681} 
+Performance may suffer from in-memory cache misses. Increase max heap size of Gradle build process to reduce cache misses.
+Downloading https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.15.3/jackson-annotations-2.15.3.pom to /home/ubuntu/.gradle/.tmp/gradle_download12060267736815112934bin
+Downloading https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.15.3/jackson-annotations-2.15.3.module to /home/ubuntu/.gradle/.tmp/gradle_download5747246861417069588bin
+Downloading https://repo.maven.apache.org/maven2/io/micrometer/micrometer-commons/1.12.2/micrometer-commons-1.12.2.pom to /home/ubuntu/.gradle/.tmp/gradle_download8939554994357904465bin
+Downloading https://repo.maven.apache.org/maven2/jakarta/activation/jakarta.activation-api/2.1.2/jakarta.activation-api-2.1.2.pom to /home/ubuntu/.gradle/.tmp/gradle_download12330426260937058535bin
+Downloading https://repo.maven.apache.org/maven2/org/glassfish/jaxb/jaxb-core/4.0.4/jaxb-core-4.0.4.pom to /home/ubuntu/.gradle/.tmp/gradle_download7350083413103267942bin
+Downloading https://repo.maven.apache.org/maven2/net/minidev/json-smart/2.5.0/json-smart-2.5.0.pom to /home/ubuntu/.gradle/.tmp/gradle_download11872636771720077476bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/security/spring-security-crypto/6.2.1/spring-security-crypto-6.2.1.pom to /home/ubuntu/.gradle/.tmp/gradle_download12244408261746856677bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/security/spring-security-crypto/6.2.1/spring-security-crypto-6.2.1.module to /home/ubuntu/.gradle/.tmp/gradle_download12905502190393207789bin
+Downloading https://repo.maven.apache.org/maven2/ch/qos/logback/logback-core/1.4.14/logback-core-1.4.14.pom to /home/ubuntu/.gradle/.tmp/gradle_download10767772214884177712bin
+Downloading https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j-api/2.21.1/log4j-api-2.21.1.pom to /home/ubuntu/.gradle/.tmp/gradle_download14444658682931866080bin
+Downloading https://repo.maven.apache.org/maven2/org/glassfish/jaxb/txw2/4.0.4/txw2-4.0.4.pom to /home/ubuntu/.gradle/.tmp/gradle_download14578611921982097801bin
+Downloading https://repo.maven.apache.org/maven2/org/eclipse/angus/angus-activation/2.0.1/angus-activation-2.0.1.pom to /home/ubuntu/.gradle/.tmp/gradle_download714281676292016266bin
+Downloading https://repo.maven.apache.org/maven2/com/sun/xml/bind/mvn/jaxb-txw-parent/4.0.4/jaxb-txw-parent-4.0.4.pom to /home/ubuntu/.gradle/.tmp/gradle_download10357877896613492871bin
+Downloading https://repo.maven.apache.org/maven2/org/eclipse/angus/angus-activation-project/2.0.1/angus-activation-project-2.0.1.pom to /home/ubuntu/.gradle/.tmp/gradle_download4302259148164909362bin
+Downloading https://repo.maven.apache.org/maven2/net/minidev/accessors-smart/2.5.0/accessors-smart-2.5.0.pom to /home/ubuntu/.gradle/.tmp/gradle_download1241591300530891961bin
+Downloading https://repo.maven.apache.org/maven2/org/ow2/asm/asm/9.3/asm-9.3.pom to /home/ubuntu/.gradle/.tmp/gradle_download10608127075300153746bin
+Downloading https://repo.maven.apache.org/maven2/org/ow2/ow2/1.5/ow2-1.5.pom to /home/ubuntu/.gradle/.tmp/gradle_download14135604263773916025bin
+Excluding []
+Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-hateoas/3.2.2/spring-boot-starter-hateoas-3.2.2.jar to /home/ubuntu/.gradle/.tmp/gradle_download14924917842907982443bin
+Downloading https://repo.maven.apache.org/maven2/org/projectlombok/lombok/1.18.30/lombok-1.18.30.jar to /home/ubuntu/.gradle/.tmp/gradle_download14912226088104969228bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-web/3.2.2/spring-boot-starter-web-3.2.2.jar to /home/ubuntu/.gradle/.tmp/gradle_download9963826828976593568bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-validation/3.2.2/spring-boot-starter-validation-3.2.2.jar to /home/ubuntu/.gradle/.tmp/gradle_download16476943250098343827bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-data-jpa/3.2.2/spring-boot-starter-data-jpa-3.2.2.jar to /home/ubuntu/.gradle/.tmp/gradle_download7322935465224338032bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-security/3.2.2/spring-boot-starter-security-3.2.2.jar to /home/ubuntu/.gradle/.tmp/gradle_download11150875966039890801bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-json/3.2.2/spring-boot-starter-json-3.2.2.jar to /home/ubuntu/.gradle/.tmp/gradle_download14800836247541448861bin
+Downloading https://repo.maven.apache.org/maven2/org/flywaydb/flyway-core/9.22.3/flyway-core-9.22.3.jar to /home/ubuntu/.gradle/.tmp/gradle_download1526988526323082711bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-aop/3.2.2/spring-boot-starter-aop-3.2.2.jar to /home/ubuntu/.gradle/.tmp/gradle_download9329482198957891429bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-jdbc/3.2.2/spring-boot-starter-jdbc-3.2.2.jar to /home/ubuntu/.gradle/.tmp/gradle_download9706164661119777594bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter/3.2.2/spring-boot-starter-3.2.2.jar to /home/ubuntu/.gradle/.tmp/gradle_download9828048379275745849bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-tomcat/3.2.2/spring-boot-starter-tomcat-3.2.2.jar to /home/ubuntu/.gradle/.tmp/gradle_download3962202337972094481bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-webmvc/6.1.3/spring-webmvc-6.1.3.jar to /home/ubuntu/.gradle/.tmp/gradle_download16783611445414881767bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/hateoas/spring-hateoas/2.2.0/spring-hateoas-2.2.0.jar to /home/ubuntu/.gradle/.tmp/gradle_download14558178426661792091bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/security/spring-security-web/6.2.1/spring-security-web-6.2.1.jar to /home/ubuntu/.gradle/.tmp/gradle_download5241484522446815962bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-web/6.1.3/spring-web-6.1.3.jar to /home/ubuntu/.gradle/.tmp/gradle_download2180657312915212945bin
+Downloading https://repo.maven.apache.org/maven2/org/apache/tomcat/embed/tomcat-embed-el/10.1.18/tomcat-embed-el-10.1.18.jar to /home/ubuntu/.gradle/.tmp/gradle_download17121544688419756415bin
+Downloading https://repo.maven.apache.org/maven2/org/hibernate/validator/hibernate-validator/8.0.1.Final/hibernate-validator-8.0.1.Final.jar to /home/ubuntu/.gradle/.tmp/gradle_download6107674307180305635bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-jpa/3.2.2/spring-data-jpa-3.2.2.jar to /home/ubuntu/.gradle/.tmp/gradle_download9633974704939066607bin
+Downloading https://repo.maven.apache.org/maven2/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar to /home/ubuntu/.gradle/.tmp/gradle_download2671587117972708319bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-aspects/6.1.3/spring-aspects-6.1.3.jar to /home/ubuntu/.gradle/.tmp/gradle_download10327059198471802270bin
+Cache entries evicted. In-memory cache of /home/ubuntu/repos/spring-boot-realworld-app/.gradle/8.5/checksums/sha1-checksums.bin: Size{400} MaxSize{400}, CacheStats{hitCount=802, missCount=1127, loadSuccessCount=1121, loadExceptionCount=0, totalLoadTime=636830946, evictionCount=721} 
+Performance may suffer from in-memory cache misses. Increase max heap size of Gradle build process to reduce cache misses.
+Downloading https://repo.maven.apache.org/maven2/org/springframework/security/spring-security-config/6.2.1/spring-security-config-6.2.1.jar to /home/ubuntu/.gradle/.tmp/gradle_download2965446195205797538bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-autoconfigure/3.2.2/spring-boot-autoconfigure-3.2.2.jar to /home/ubuntu/.gradle/.tmp/gradle_download16865040009569701780bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot/3.2.2/spring-boot-3.2.2.jar to /home/ubuntu/.gradle/.tmp/gradle_download15106231129279263818bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/security/spring-security-core/6.2.1/spring-security-core-6.2.1.jar to /home/ubuntu/.gradle/.tmp/gradle_download13383476721423834868bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-context/6.1.3/spring-context-6.1.3.jar to /home/ubuntu/.gradle/.tmp/gradle_download5526213334646456871bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-aop/6.1.3/spring-aop-6.1.3.jar to /home/ubuntu/.gradle/.tmp/gradle_download631237214115593055bin
+Downloading https://repo.maven.apache.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.15.3/jackson-datatype-jsr310-2.15.3.jar to /home/ubuntu/.gradle/.tmp/gradle_download3087648136276984965bin
+Downloading https://repo.maven.apache.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.15.3/jackson-datatype-jdk8-2.15.3.jar to /home/ubuntu/.gradle/.tmp/gradle_download17647007965693465924bin
+Downloading https://repo.maven.apache.org/maven2/com/fasterxml/jackson/module/jackson-module-parameter-names/2.15.3/jackson-module-parameter-names-2.15.3.jar to /home/ubuntu/.gradle/.tmp/gradle_download16345114122485598362bin
+Downloading https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.15.3/jackson-databind-2.15.3.jar to /home/ubuntu/.gradle/.tmp/gradle_download15314864923927426058bin
+Downloading https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-core/2.15.3/jackson-core-2.15.3.jar to /home/ubuntu/.gradle/.tmp/gradle_download15031933153005977109bin
+Downloading https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.15.3/jackson-annotations-2.15.3.jar to /home/ubuntu/.gradle/.tmp/gradle_download16152609622351998247bin
+Downloading https://repo.maven.apache.org/maven2/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar to /home/ubuntu/.gradle/.tmp/gradle_download1817292322526593695bin
+Downloading https://repo.maven.apache.org/maven2/com/fasterxml/jackson/dataformat/jackson-dataformat-toml/2.15.3/jackson-dataformat-toml-2.15.3.jar to /home/ubuntu/.gradle/.tmp/gradle_download13743222511728224551bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-logging/3.2.2/spring-boot-starter-logging-3.2.2.jar to /home/ubuntu/.gradle/.tmp/gradle_download13652340812440466904bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-orm/6.1.3/spring-orm-6.1.3.jar to /home/ubuntu/.gradle/.tmp/gradle_download15445840363616512516bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-jdbc/6.1.3/spring-jdbc-6.1.3.jar to /home/ubuntu/.gradle/.tmp/gradle_download6155409268586886231bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-commons/3.2.2/spring-data-commons-3.2.2.jar to /home/ubuntu/.gradle/.tmp/gradle_download14226507174201542649bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-tx/6.1.3/spring-tx-6.1.3.jar to /home/ubuntu/.gradle/.tmp/gradle_download12997902536117710127bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-expression/6.1.3/spring-expression-6.1.3.jar to /home/ubuntu/.gradle/.tmp/gradle_download7703192717548435098bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-beans/6.1.3/spring-beans-6.1.3.jar to /home/ubuntu/.gradle/.tmp/gradle_download16808045213172643465bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-core/6.1.3/spring-core-6.1.3.jar to /home/ubuntu/.gradle/.tmp/gradle_download4423478732367952098bin
+Downloading https://repo.maven.apache.org/maven2/org/yaml/snakeyaml/2.2/snakeyaml-2.2.jar to /home/ubuntu/.gradle/.tmp/gradle_download7367904083036483454bin
+Downloading https://repo.maven.apache.org/maven2/org/apache/tomcat/embed/tomcat-embed-websocket/10.1.18/tomcat-embed-websocket-10.1.18.jar to /home/ubuntu/.gradle/.tmp/gradle_download1871600258999063600bin
+Downloading https://repo.maven.apache.org/maven2/io/micrometer/micrometer-observation/1.12.2/micrometer-observation-1.12.2.jar to /home/ubuntu/.gradle/.tmp/gradle_download5744397483043334794bin
+Downloading https://repo.maven.apache.org/maven2/org/apache/tomcat/embed/tomcat-embed-core/10.1.18/tomcat-embed-core-10.1.18.jar to /home/ubuntu/.gradle/.tmp/gradle_download7630736820511184997bin
+Downloading https://repo.maven.apache.org/maven2/org/jboss/logging/jboss-logging/3.5.3.Final/jboss-logging-3.5.3.Final.jar to /home/ubuntu/.gradle/.tmp/gradle_download2848361890901650886bin
+Downloading https://repo.maven.apache.org/maven2/com/fasterxml/classmate/1.6.0/classmate-1.6.0.jar to /home/ubuntu/.gradle/.tmp/gradle_download9069973539232953288bin
+Downloading https://repo.maven.apache.org/maven2/org/aspectj/aspectjweaver/1.9.21/aspectjweaver-1.9.21.jar to /home/ubuntu/.gradle/.tmp/gradle_download16198318726648137294bin
+Downloading https://repo.maven.apache.org/maven2/com/zaxxer/HikariCP/5.0.1/HikariCP-5.0.1.jar to /home/ubuntu/.gradle/.tmp/gradle_download15020048500949449704bin
+Downloading https://repo.maven.apache.org/maven2/ch/qos/logback/logback-classic/1.4.14/logback-classic-1.4.14.jar to /home/ubuntu/.gradle/.tmp/gradle_download7595564172574936151bin
+Downloading https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j-to-slf4j/2.21.1/log4j-to-slf4j-2.21.1.jar to /home/ubuntu/.gradle/.tmp/gradle_download13070037266297253477bin
+Downloading https://repo.maven.apache.org/maven2/org/slf4j/jul-to-slf4j/2.0.11/jul-to-slf4j-2.0.11.jar to /home/ubuntu/.gradle/.tmp/gradle_download12010582604126129848bin
+Downloading https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/2.0.11/slf4j-api-2.0.11.jar to /home/ubuntu/.gradle/.tmp/gradle_download16955485867451450299bin
+Downloading https://repo.maven.apache.org/maven2/com/jayway/jsonpath/json-path/2.8.0/json-path-2.8.0.jar to /home/ubuntu/.gradle/.tmp/gradle_download17529019032463858296bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-jcl/6.1.3/spring-jcl-6.1.3.jar to /home/ubuntu/.gradle/.tmp/gradle_download13385470876174657817bin
+Downloading https://repo.maven.apache.org/maven2/io/micrometer/micrometer-commons/1.12.2/micrometer-commons-1.12.2.jar to /home/ubuntu/.gradle/.tmp/gradle_download5312400629290548149bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/security/spring-security-crypto/6.2.1/spring-security-crypto-6.2.1.jar to /home/ubuntu/.gradle/.tmp/gradle_download2341054187614558575bin
+Downloading https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j-api/2.21.1/log4j-api-2.21.1.jar to /home/ubuntu/.gradle/.tmp/gradle_download18377268285405360358bin
+Downloading https://repo.maven.apache.org/maven2/ch/qos/logback/logback-core/1.4.14/logback-core-1.4.14.jar to /home/ubuntu/.gradle/.tmp/gradle_download7512756006043690295bin
+Cache entries evicted. In-memory cache of /home/ubuntu/repos/spring-boot-realworld-app/.gradle/8.5/checksums/sha1-checksums.bin: Size{400} MaxSize{400}, CacheStats{hitCount=802, missCount=1167, loadSuccessCount=1161, loadExceptionCount=0, totalLoadTime=666773984, evictionCount=761} 
+Performance may suffer from in-memory cache misses. Increase max heap size of Gradle build process to reduce cache misses.
+Excluding []
+Caching disabled for task ':compileJava' because:
+  Build cache is disabled
+Task ':compileJava' is not up-to-date because:
+  One or more additional actions for task ':compileJava' have changed.
+The input changes require a full rebuild for incremental task ':compileJava'.
+Full recompilation is required because no incremental change information is available. This is usually caused by clean builds or changing compiler arguments.
+Compiling with toolchain '/usr/lib/jvm/java-17-openjdk-amd64'.
+Compiling with JDK Java compiler API.
+Note: /home/ubuntu/repos/spring-boot-realworld-app/src/main/java/io/spring/infrastructure/service/DefaultJwtService.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Class dependency analysis for incremental compilation took 0.018 secs.
+Created classpath snapshot for incremental compilation in 4.211 secs.
+Resolve mutations for :processResources (Thread[included builds,5,main]) started.
+:processResources (Thread[included builds,5,main]) started.
+
+> Task :processResources UP-TO-DATE
+Caching disabled for task ':processResources' because:
+  Build cache is disabled
+Skipping task ':processResources' as it is up-to-date.
+Resolve mutations for :classes (Thread[included builds,5,main]) started.
+:classes (Thread[included builds,5,main]) started.
+
+> Task :classes
+Skipping task ':classes' as it has no actions.
+Resolve mutations for :compileTestJava (Thread[included builds,5,main]) started.
+:compileTestJava (Thread[included builds,5,main]) started.
+
+> Task :compileTestJava
+Downloading https://repo.maven.apache.org/maven2/org/springframework/security/spring-security-test/6.2.1/spring-security-test-6.2.1.pom to /home/ubuntu/.gradle/.tmp/gradle_download16534454883687030080bin
+Cache entries evicted. In-memory cache of /home/ubuntu/repos/spring-boot-realworld-app/.gradle/8.5/checksums/md5-checksums.bin: Size{400} MaxSize{400}, CacheStats{hitCount=0, missCount=640, loadSuccessCount=641, loadExceptionCount=0, totalLoadTime=555657549, evictionCount=241} 
+Performance may suffer from in-memory cache misses. Increase max heap size of Gradle build process to reduce cache misses.
+Downloading https://repo.maven.apache.org/maven2/org/springframework/security/spring-security-test/6.2.1/spring-security-test-6.2.1.module to /home/ubuntu/.gradle/.tmp/gradle_download8894768341028104169bin
+Downloading https://repo.maven.apache.org/maven2/org/apache/groovy/groovy/4.0.17/groovy-4.0.17.pom to /home/ubuntu/.gradle/.tmp/gradle_download15504344430709206617bin
+Downloading https://repo.maven.apache.org/maven2/org/apache/groovy/groovy/4.0.17/groovy-4.0.17.module to /home/ubuntu/.gradle/.tmp/gradle_download7188999306749658043bin
+Downloading https://repo.maven.apache.org/maven2/org/apache/groovy/groovy-xml/4.0.17/groovy-xml-4.0.17.pom to /home/ubuntu/.gradle/.tmp/gradle_download2893102698326905105bin
+Downloading https://repo.maven.apache.org/maven2/io/rest-assured/json-path/5.3.2/json-path-5.3.2.pom to /home/ubuntu/.gradle/.tmp/gradle_download4598604719898940365bin
+Downloading https://repo.maven.apache.org/maven2/org/apache/groovy/groovy-xml/4.0.17/groovy-xml-4.0.17.module to /home/ubuntu/.gradle/.tmp/gradle_download15243785352478850347bin
+Downloading https://repo.maven.apache.org/maven2/io/rest-assured/xml-path/5.3.2/xml-path-5.3.2.pom to /home/ubuntu/.gradle/.tmp/gradle_download14316608338203642233bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-test/6.1.3/spring-test-6.1.3.pom to /home/ubuntu/.gradle/.tmp/gradle_download9187971030867230195bin
+Downloading https://repo.maven.apache.org/maven2/io/rest-assured/spring-commons/5.3.2/spring-commons-5.3.2.pom to /home/ubuntu/.gradle/.tmp/gradle_download12554120033779131264bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-test/6.1.3/spring-test-6.1.3.module to /home/ubuntu/.gradle/.tmp/gradle_download3851086614956152869bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-test/3.2.2/spring-boot-test-3.2.2.pom to /home/ubuntu/.gradle/.tmp/gradle_download13660892454812887268bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-test-autoconfigure/3.2.2/spring-boot-test-autoconfigure-3.2.2.pom to /home/ubuntu/.gradle/.tmp/gradle_download12144992778917968013bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-test/3.2.2/spring-boot-test-3.2.2.module to /home/ubuntu/.gradle/.tmp/gradle_download13323626096596658630bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-test-autoconfigure/3.2.2/spring-boot-test-autoconfigure-3.2.2.module to /home/ubuntu/.gradle/.tmp/gradle_download3138261942350058088bin
+Downloading https://repo.maven.apache.org/maven2/org/assertj/assertj-core/3.24.2/assertj-core-3.24.2.pom to /home/ubuntu/.gradle/.tmp/gradle_download15124211590625973863bin
+Downloading https://repo.maven.apache.org/maven2/org/awaitility/awaitility/4.2.0/awaitility-4.2.0.pom to /home/ubuntu/.gradle/.tmp/gradle_download2209283824809763989bin
+Downloading https://repo.maven.apache.org/maven2/org/assertj/assertj-parent/3.24.2/assertj-parent-3.24.2.pom to /home/ubuntu/.gradle/.tmp/gradle_download16887813328029768934bin
+Downloading https://repo.maven.apache.org/maven2/org/awaitility/awaitility-parent/4.2.0/awaitility-parent-4.2.0.pom to /home/ubuntu/.gradle/.tmp/gradle_download10824171886332176405bin
+Downloading https://repo.maven.apache.org/maven2/org/assertj/assertj-build/3.24.2/assertj-build-3.24.2.pom to /home/ubuntu/.gradle/.tmp/gradle_download1353187238415138937bin
+Downloading https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter/5.10.1/junit-jupiter-5.10.1.pom to /home/ubuntu/.gradle/.tmp/gradle_download12881661227773973011bin
+Downloading https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter/5.10.1/junit-jupiter-5.10.1.module to /home/ubuntu/.gradle/.tmp/gradle_download15617882786554970865bin
+Downloading https://repo.maven.apache.org/maven2/org/mockito/mockito-core/5.7.0/mockito-core-5.7.0.pom to /home/ubuntu/.gradle/.tmp/gradle_download17842032504429310170bin
+Downloading https://repo.maven.apache.org/maven2/org/skyscreamer/jsonassert/1.5.1/jsonassert-1.5.1.pom to /home/ubuntu/.gradle/.tmp/gradle_download7747737618323413551bin
+Downloading https://repo.maven.apache.org/maven2/org/xmlunit/xmlunit-core/2.9.1/xmlunit-core-2.9.1.pom to /home/ubuntu/.gradle/.tmp/gradle_download4681031881889309075bin
+Downloading https://repo.maven.apache.org/maven2/org/xmlunit/xmlunit-parent/2.9.1/xmlunit-parent-2.9.1.pom to /home/ubuntu/.gradle/.tmp/gradle_download6969067734573700929bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/restdocs/spring-restdocs-core/3.0.1/spring-restdocs-core-3.0.1.pom to /home/ubuntu/.gradle/.tmp/gradle_download968318707343519234bin
+Downloading https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-commons/1.10.1/junit-platform-commons-1.10.1.pom to /home/ubuntu/.gradle/.tmp/gradle_download13425622356261758787bin
+Downloading https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-commons/1.10.1/junit-platform-commons-1.10.1.module to /home/ubuntu/.gradle/.tmp/gradle_download6006112381627383048bin
+Downloading https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-engine/1.10.1/junit-platform-engine-1.10.1.pom to /home/ubuntu/.gradle/.tmp/gradle_download7613109949537819134bin
+Downloading https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-engine/1.10.1/junit-platform-engine-1.10.1.module to /home/ubuntu/.gradle/.tmp/gradle_download16581924810148066476bin
+Cache entries evicted. In-memory cache of /home/ubuntu/repos/spring-boot-realworld-app/.gradle/8.5/checksums/sha1-checksums.bin: Size{400} MaxSize{400}, CacheStats{hitCount=818, missCount=1207, loadSuccessCount=1201, loadExceptionCount=0, totalLoadTime=686991337, evictionCount=801} 
+Performance may suffer from in-memory cache misses. Increase max heap size of Gradle build process to reduce cache misses.
+Downloading https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.16.0/commons-codec-1.16.0.pom to /home/ubuntu/.gradle/.tmp/gradle_download198003216281054263bin
+Downloading https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/58/commons-parent-58.pom to /home/ubuntu/.gradle/.tmp/gradle_download7866012934800865150bin
+Downloading https://repo.maven.apache.org/maven2/org/apache/groovy/groovy-json/4.0.17/groovy-json-4.0.17.pom to /home/ubuntu/.gradle/.tmp/gradle_download11810373653876643065bin
+Downloading https://repo.maven.apache.org/maven2/io/rest-assured/rest-assured-common/5.3.2/rest-assured-common-5.3.2.pom to /home/ubuntu/.gradle/.tmp/gradle_download8969334492577293797bin
+Downloading https://repo.maven.apache.org/maven2/org/apache/groovy/groovy-json/4.0.17/groovy-json-4.0.17.module to /home/ubuntu/.gradle/.tmp/gradle_download15813533982362187638bin
+Downloading https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.13.0/commons-lang3-3.13.0.pom to /home/ubuntu/.gradle/.tmp/gradle_download3830462179506095542bin
+Downloading https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter-params/5.10.1/junit-jupiter-params-5.10.1.pom to /home/ubuntu/.gradle/.tmp/gradle_download17683404286216462342bin
+Downloading https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter-params/5.10.1/junit-jupiter-params-5.10.1.module to /home/ubuntu/.gradle/.tmp/gradle_download10183239676624514165bin
+Downloading https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy-agent/1.14.11/byte-buddy-agent-1.14.11.pom to /home/ubuntu/.gradle/.tmp/gradle_download8582194348183603299bin
+Cached resource https://repo.maven.apache.org/maven2/io/rest-assured/rest-assured/5.3.2/rest-assured-5.3.2.pom is up-to-date (lastModified: Fri Sep 08 14:42:30 UTC 2023).
+Cached resource https://repo.maven.apache.org/maven2/io/rest-assured/spring-mock-mvc/5.3.2/spring-mock-mvc-5.3.2.pom is up-to-date (lastModified: Fri Sep 08 14:42:47 UTC 2023).
+Cached resource https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter-api/5.10.1/junit-jupiter-api-5.10.1.pom is up-to-date (lastModified: Sun Nov 05 16:49:54 UTC 2023).
+Cached resource https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter-engine/5.10.1/junit-jupiter-engine-5.10.1.pom is up-to-date (lastModified: Sun Nov 05 16:50:19 UTC 2023).
+Cached resource https://repo.maven.apache.org/maven2/org/mockito/mockito-junit-jupiter/5.8.0/mockito-junit-jupiter-5.8.0.pom is up-to-date (lastModified: Fri Dec 01 19:31:31 UTC 2023).
+Cached resource https://repo.maven.apache.org/maven2/org/springframework/restdocs/spring-restdocs-mockmvc/3.0.1/spring-restdocs-mockmvc-3.0.1.pom is up-to-date (lastModified: Mon Nov 20 18:18:37 UTC 2023).
+Excluding []
+Downloading https://repo.maven.apache.org/maven2/io/rest-assured/spring-commons/5.3.2/spring-commons-5.3.2.jar to /home/ubuntu/.gradle/.tmp/gradle_download18298247028585033233bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/security/spring-security-test/6.2.1/spring-security-test-6.2.1.jar to /home/ubuntu/.gradle/.tmp/gradle_download15846138746880809899bin
+Downloading https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter/5.10.1/junit-jupiter-5.10.1.jar to /home/ubuntu/.gradle/.tmp/gradle_download17421868045768581931bin
+Downloading https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-engine/1.10.1/junit-platform-engine-1.10.1.jar to /home/ubuntu/.gradle/.tmp/gradle_download153505715969697259bin
+Downloading https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-commons/1.10.1/junit-platform-commons-1.10.1.jar to /home/ubuntu/.gradle/.tmp/gradle_download965772721520019395bin
+Downloading https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter-params/5.10.1/junit-jupiter-params-5.10.1.jar to /home/ubuntu/.gradle/.tmp/gradle_download10403609847230593970bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-test-autoconfigure/3.2.2/spring-boot-test-autoconfigure-3.2.2.jar to /home/ubuntu/.gradle/.tmp/gradle_download10849279206985557462bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-test/3.2.2/spring-boot-test-3.2.2.jar to /home/ubuntu/.gradle/.tmp/gradle_download9089220132449370772bin
+Downloading https://repo.maven.apache.org/maven2/io/rest-assured/xml-path/5.3.2/xml-path-5.3.2.jar to /home/ubuntu/.gradle/.tmp/gradle_download6018902330758864821bin
+Downloading https://repo.maven.apache.org/maven2/io/rest-assured/json-path/5.3.2/json-path-5.3.2.jar to /home/ubuntu/.gradle/.tmp/gradle_download13554274441611520064bin
+Downloading https://repo.maven.apache.org/maven2/org/apache/groovy/groovy-json/4.0.17/groovy-json-4.0.17.jar to /home/ubuntu/.gradle/.tmp/gradle_download16624283899093592578bin
+Downloading https://repo.maven.apache.org/maven2/org/apache/groovy/groovy-xml/4.0.17/groovy-xml-4.0.17.jar to /home/ubuntu/.gradle/.tmp/gradle_download11004756354930802223bin
+Downloading https://repo.maven.apache.org/maven2/io/rest-assured/rest-assured-common/5.3.2/rest-assured-common-5.3.2.jar to /home/ubuntu/.gradle/.tmp/gradle_download3948591275941892109bin
+Downloading https://repo.maven.apache.org/maven2/org/awaitility/awaitility/4.2.0/awaitility-4.2.0.jar to /home/ubuntu/.gradle/.tmp/gradle_download14448112923647970278bin
+Downloading https://repo.maven.apache.org/maven2/org/apache/groovy/groovy/4.0.17/groovy-4.0.17.jar to /home/ubuntu/.gradle/.tmp/gradle_download17852465766727750776bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-test/6.1.3/spring-test-6.1.3.jar to /home/ubuntu/.gradle/.tmp/gradle_download9536499930845034579bin
+Downloading https://repo.maven.apache.org/maven2/jakarta/xml/bind/jakarta.xml.bind-api/4.0.1/jakarta.xml.bind-api-4.0.1.jar to /home/ubuntu/.gradle/.tmp/gradle_download490133177915034091bin
+Downloading https://repo.maven.apache.org/maven2/net/minidev/json-smart/2.5.0/json-smart-2.5.0.jar to /home/ubuntu/.gradle/.tmp/gradle_download6836698715990775231bin
+Downloading https://repo.maven.apache.org/maven2/org/assertj/assertj-core/3.24.2/assertj-core-3.24.2.jar to /home/ubuntu/.gradle/.tmp/gradle_download6867743434387999150bin
+Downloading https://repo.maven.apache.org/maven2/org/mockito/mockito-core/5.7.0/mockito-core-5.7.0.jar to /home/ubuntu/.gradle/.tmp/gradle_download9049350109614060432bin
+Downloading https://repo.maven.apache.org/maven2/org/skyscreamer/jsonassert/1.5.1/jsonassert-1.5.1.jar to /home/ubuntu/.gradle/.tmp/gradle_download7736102426238197503bin
+Downloading https://repo.maven.apache.org/maven2/org/xmlunit/xmlunit-core/2.9.1/xmlunit-core-2.9.1.jar to /home/ubuntu/.gradle/.tmp/gradle_download16989642336130385693bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/restdocs/spring-restdocs-core/3.0.1/spring-restdocs-core-3.0.1.jar to /home/ubuntu/.gradle/.tmp/gradle_download14591909937658684960bin
+Downloading https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.16.0/commons-codec-1.16.0.jar to /home/ubuntu/.gradle/.tmp/gradle_download14052691855694699580bin
+Downloading https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.13.0/commons-lang3-3.13.0.jar to /home/ubuntu/.gradle/.tmp/gradle_download12734816324507290882bin
+Downloading https://repo.maven.apache.org/maven2/jakarta/activation/jakarta.activation-api/2.1.2/jakarta.activation-api-2.1.2.jar to /home/ubuntu/.gradle/.tmp/gradle_download3776547964054257903bin
+Downloading https://repo.maven.apache.org/maven2/net/minidev/accessors-smart/2.5.0/accessors-smart-2.5.0.jar to /home/ubuntu/.gradle/.tmp/gradle_download13110994770354764650bin
+Downloading https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy-agent/1.14.11/byte-buddy-agent-1.14.11.jar to /home/ubuntu/.gradle/.tmp/gradle_download1715953478940498575bin
+Downloading https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy/1.14.11/byte-buddy-1.14.11.jar to /home/ubuntu/.gradle/.tmp/gradle_download3206777365740353092bin
+Downloading https://repo.maven.apache.org/maven2/org/ow2/asm/asm/9.3/asm-9.3.jar to /home/ubuntu/.gradle/.tmp/gradle_download11802177118534736285bin
+Cache entries evicted. In-memory cache of /home/ubuntu/repos/spring-boot-realworld-app/.gradle/8.5/checksums/sha1-checksums.bin: Size{400} MaxSize{400}, CacheStats{hitCount=829, missCount=1247, loadSuccessCount=1241, loadExceptionCount=0, totalLoadTime=723663377, evictionCount=841} 
+Performance may suffer from in-memory cache misses. Increase max heap size of Gradle build process to reduce cache misses.
+Excluding []
+Caching disabled for task ':compileTestJava' because:
+  Build cache is disabled
+Task ':compileTestJava' is not up-to-date because:
+  One or more additional actions for task ':compileTestJava' have changed.
+The input changes require a full rebuild for incremental task ':compileTestJava'.
+Full recompilation is required because no incremental change information is available. This is usually caused by clean builds or changing compiler arguments.
+Compiling with toolchain '/usr/lib/jvm/java-17-openjdk-amd64'.
+Compiling with JDK Java compiler API.
+Class dependency analysis for incremental compilation took 0.003 secs.
+Created classpath snapshot for incremental compilation in 1.909 secs.
+Resolve mutations for :processTestResources (Thread[included builds,5,main]) started.
+:processTestResources (Thread[included builds,5,main]) started.
+
+> Task :processTestResources NO-SOURCE
+Skipping task ':processTestResources' as it has no source files and no previous output files.
+Resolve mutations for :testClasses (Thread[included builds,5,main]) started.
+:testClasses (Thread[included builds,5,main]) started.
+
+> Task :testClasses
+Skipping task ':testClasses' as it has no actions.
+Resolve mutations for :test (Thread[included builds,5,main]) started.
+:test (Thread[included builds,5,main]) started.
+
+> Task :test
+Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-properties-migrator/3.2.2/spring-boot-properties-migrator-3.2.2.pom to /home/ubuntu/.gradle/.tmp/gradle_download10018673728316814428bin
+Downloading https://repo.maven.apache.org/maven2/com/h2database/h2/2.2.224/h2-2.2.224.pom to /home/ubuntu/.gradle/.tmp/gradle_download2861971484413318353bin
+Cache entries evicted. In-memory cache of /home/ubuntu/repos/spring-boot-realworld-app/.gradle/8.5/checksums/md5-checksums.bin: Size{400} MaxSize{400}, CacheStats{hitCount=0, missCount=680, loadSuccessCount=681, loadExceptionCount=0, totalLoadTime=574558922, evictionCount=281} 
+Performance may suffer from in-memory cache misses. Increase max heap size of Gradle build process to reduce cache misses.
+Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-properties-migrator/3.2.2/spring-boot-properties-migrator-3.2.2.module to /home/ubuntu/.gradle/.tmp/gradle_download18357212625839213587bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-configuration-metadata/3.2.2/spring-boot-configuration-metadata-3.2.2.pom to /home/ubuntu/.gradle/.tmp/gradle_download3700189428631924695bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-configuration-metadata/3.2.2/spring-boot-configuration-metadata-3.2.2.module to /home/ubuntu/.gradle/.tmp/gradle_download16702370685189967535bin
+Excluding []
+Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-properties-migrator/3.2.2/spring-boot-properties-migrator-3.2.2.jar to /home/ubuntu/.gradle/.tmp/gradle_download16754177194744395748bin
+Downloading https://repo.maven.apache.org/maven2/com/h2database/h2/2.2.224/h2-2.2.224.jar to /home/ubuntu/.gradle/.tmp/gradle_download11557013198757010683bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-configuration-metadata/3.2.2/spring-boot-configuration-metadata-3.2.2.jar to /home/ubuntu/.gradle/.tmp/gradle_download16046956637008172669bin
+Downloading https://repo.maven.apache.org/maven2/org/glassfish/jaxb/jaxb-runtime/4.0.4/jaxb-runtime-4.0.4.jar to /home/ubuntu/.gradle/.tmp/gradle_download2680830318381135425bin
+Downloading https://repo.maven.apache.org/maven2/org/glassfish/jaxb/jaxb-core/4.0.4/jaxb-core-4.0.4.jar to /home/ubuntu/.gradle/.tmp/gradle_download3793016517812167018bin
+Downloading https://repo.maven.apache.org/maven2/org/hibernate/common/hibernate-commons-annotations/6.0.6.Final/hibernate-commons-annotations-6.0.6.Final.jar to /home/ubuntu/.gradle/.tmp/gradle_download11262487126229452736bin
+Downloading https://repo.maven.apache.org/maven2/io/smallrye/jandex/3.1.2/jandex-3.1.2.jar to /home/ubuntu/.gradle/.tmp/gradle_download15788473404251724115bin
+Downloading https://repo.maven.apache.org/maven2/org/eclipse/angus/angus-activation/2.0.1/angus-activation-2.0.1.jar to /home/ubuntu/.gradle/.tmp/gradle_download4600521045699334413bin
+Downloading https://repo.maven.apache.org/maven2/org/glassfish/jaxb/txw2/4.0.4/txw2-4.0.4.jar to /home/ubuntu/.gradle/.tmp/gradle_download12326102644382596318bin
+Caching disabled for task ':test' because:
+  Build cache is disabled
+Task ':test' is not up-to-date because:
+  Task has failed previously.
+Starting process 'Gradle Test Executor 16'. Working directory: /home/ubuntu/repos/spring-boot-realworld-app Command: /usr/lib/jvm/java-17-openjdk-amd64/bin/java -Dorg.gradle.internal.worker.tmpdir=/home/ubuntu/repos/spring-boot-realworld-app/build/tmp/test/work -Dorg.gradle.native=false @/home/ubuntu/.gradle/.tmp/gradle-worker-classpath12067041207436903147txt -Xmx512m -Dfile.encoding=US-ASCII -Duser.country=US -Duser.language=en -Duser.variant -ea worker.org.gradle.process.internal.worker.GradleWorkerMain 'Gradle Test Executor 16'
+Successfully started process 'Gradle Test Executor 16'
+
+Gradle Test Executor 16 started executing tests.
+
+> Task :test
+
+ArticleApiTest STANDARD_OUT
+    Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+    16:39:51.001 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [io.spring.api.ArticleApiTest]: ArticleApiTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+    16:39:51.246 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration io.spring.RealworldApplication for test class io.spring.api.ArticleApiTest
+
+      .   ____          _            __ _ _
+     /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+    ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+     \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+      '  |____| .__|_| |_|_| |_\__, | / / / /
+     =========|_|==============|___/=/_/_/_/
+     :: Spring Boot ::                (v3.2.2)
+
+    2025-02-21T16:39:51.906Z  INFO 26605 --- [    Test worker] io.spring.api.ArticleApiTest             : Starting ArticleApiTest using Java 17.0.13 with PID 26605 (started by ubuntu in /home/ubuntu/repos/spring-boot-realworld-app)
+    2025-02-21T16:39:51.908Z  INFO 26605 --- [    Test worker] io.spring.api.ArticleApiTest             : No active profile set, falling back to 1 default profile: "default"
+
+OpenJDK 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+
+> Task :test
+    2025-02-21T16:39:55.352Z  WARN 26605 --- [    Test worker] .s.s.UserDetailsServiceAutoConfiguration : 
+
+    Using generated security password: cc60a38f-74ea-450b-9cd4-39b89ada347f
+
+    This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+    2025-02-21T16:39:55.782Z  INFO 26605 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7e691624, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7ef60c02, org.springframework.security.web.context.SecurityContextHolderFilter@1c2cdc67, org.springframework.security.web.header.HeaderWriterFilter@112530c3, org.springframework.web.filter.CorsFilter@5d9d8e46, org.springframework.security.web.authentication.logout.LogoutFilter@224d537d, io.spring.api.security.JwtTokenFilter@3c89b864, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@21d8da75, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5a1c7619, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6d0a14c2, org.springframework.security.web.session.SessionManagementFilter@484302ee, org.springframework.security.web.access.ExceptionTranslationFilter@29bd2796, org.springframework.security.web.access.intercept.AuthorizationFilter@448892f1]
+    2025-02-21T16:39:56.263Z  INFO 26605 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+    2025-02-21T16:39:56.264Z  INFO 26605 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+    2025-02-21T16:39:56.269Z  INFO 26605 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 4 ms
+    2025-02-21T16:39:56.312Z  INFO 26605 --- [    Test worker] io.spring.api.ArticleApiTest             : Started ArticleApiTest in 4.944 seconds (process running for 6.479)
+
+Gradle Test Executor 16 finished executing tests.
+
+> Task :test
+Finished generating test XML results (0.002 secs) into: /home/ubuntu/repos/spring-boot-realworld-app/build/test-results/test
+Generating HTML test report...
+Finished generating test html results (0.003 secs) into: /home/ubuntu/repos/spring-boot-realworld-app/build/reports/tests/test
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.5/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 28s
+4 actionable tasks: 3 executed, 1 up-to-date
+Some of the file system contents retained in the virtual file system are on file systems that Gradle doesn't support watching. The relevant state was discarded to ensure changes to these locations are properly detected. You can override this by explicitly enabling file system watching.
