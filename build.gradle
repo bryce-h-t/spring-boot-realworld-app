@@ -1,15 +1,14 @@
 plugins {
-    id 'org.springframework.boot' version '2.4.3'
-    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+    id 'org.springframework.boot' version '3.2.2'
+    id 'io.spring.dependency-management' version '1.1.4'
     id 'java'
     id 'idea'
     id 'eclipse'
-    id("com.epam.drill.agent.runner.app") version '0.2.2'
 }
 
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = JavaVersion.VERSION_1_8
-targetCompatibility = JavaVersion.VERSION_1_8
+sourceCompatibility = JavaVersion.VERSION_17
+targetCompatibility = JavaVersion.VERSION_17
 
 repositories {
     mavenLocal()
@@ -47,13 +46,4 @@ dependencies {
 
 test {
     useJUnitPlatform()
-}
-
-drill {
-    agentId = "backend2"
-    groupId = "test"
-    buildVersion = "0.1.7"
-    adminHost = "localhost"
-    adminPort = 9090
-    logLevel = com.epam.drill.agent.runner.LogLevels.INFO
 }
