@@ -18,7 +18,8 @@ public class DefaultJwtServiceTest {
 
     @Before
     public void setUp() {
-        jwtService = new DefaultJwtService("secretsecretsecretsecretsecretsecretsecretsecretsecretsecretsecretsecret", 3600);
+        // Use a placeholder secret for tests. In production, use environment variables or secure configuration
+        jwtService = new DefaultJwtService("test-secret".repeat(8), 3600);
     }
 
     @Test
