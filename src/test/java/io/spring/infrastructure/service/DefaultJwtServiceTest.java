@@ -18,7 +18,8 @@ public class DefaultJwtServiceTest {
 
     @Before
     public void setUp() {
-        jwtService = new DefaultJwtService("123123", 3600);
+        String secret = "this_is_a_secret_key_long_enough_for_hs256_algorithm_with_proper_length_12345";
+        jwtService = new DefaultJwtService(secret, 3600);
     }
 
     @Test
